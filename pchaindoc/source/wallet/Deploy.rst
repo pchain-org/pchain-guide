@@ -5,7 +5,7 @@ How to deploy contract on pchain
 .. toctree::
    :maxdepth: 2
 
-We recommand use online compiler <https://ethereum.github.io/browser-solidity/#optimize=false&version=soljson-v0.5.7+commit.6da8b019.js> to compile smart contract.
+We recommand use `online compiler <https://ethereum.github.io/browser-solidity/#optimize=false&version=soljson-v0.5.7+commit.6da8b019.js>`_ to compile smart contract.
 
 -------
 Compile
