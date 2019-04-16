@@ -1,0 +1,25 @@
+.. test documentation master file, created by
+   sphinx-quickstart on Wed Apr 10 15:57:20 2019.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to Pchain Documentation!
+================================
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Contents:
+
+   wallet/GettingStart 
+   
+
+
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
