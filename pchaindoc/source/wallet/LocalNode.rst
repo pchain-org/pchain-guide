@@ -6,7 +6,7 @@ To use the local node mode of pchain's wallet, you should prepare a pchain's rpc
 Important: 
 Pchain RPC's defalut port is 6969, remember open your port 6969 **only** to your local ip and don't keep your account unlock for long time!!! 
 
-First, set the RPC url in wallet:
+First, set the RPC URL in wallet:
 
 .. image:: ../_static/wallet/localnode/seturl.jpg
 
@@ -19,3 +19,4 @@ After this, pchain's wallet will read the chain state to wallet.
    :caption: Contents:
 
    localnode/Epoch
+   localnode/Candidate

@@ -1,7 +1,9 @@
 How to become validator
 =========================
+Note : you can do this only on wallet's local node mode, please go to this `guide <https://pchaindoc.readthedocs.io/en/latest/wallet/LocalNode.html>`_ to set up the RPC URL.
 
-First of all, make sure you have bls' key for consensus, the information is included in file `priv_validator.json`. Here is an example.
+
+First of all, make sure you have bls' key for consensus, thy are included in file `priv_validator.json`. (If you don't have one, follow `this <https://github.com/pchain-org/pchain/wiki/How-To-Become-A-Validator>`_ to generate). Here is an example. 
 
 .. code-block:: json
 
@@ -19,18 +21,18 @@ First of all, make sure you have bls' key for consensus, the information is incl
 
 EPOCH is the update cycle of the Validator, which is about 30 days on mainnet.
 
-To become a Pchain's validator, you can participate by voting. The voting is divided into two phases: Vote and Reveal Vote.
+To become a PCHAIN's validator, you can participate by voting. The voting is divided into two phases: Vote and Reveal Vote.
 
 You can view epoch's information on wallet `Epoch` page.
 
 .. image:: ../../_static/wallet/localnode/epoch.png
 
-You should vote during vote duration (when block height higher than vote_start_block and lower than vote_end_block) and reveal during revealduration (when block height higher than reveal_start_block and lower than reveal_end_block).
+You should vote during vote duration (vote_end_block >= block height >= vote_start_block) and reveal during revealduration (reveal_end_block >= block height >= reveal_start_block).
 
 ====
 Vote
 ====
-Click the **Vote Next Epoch** button and fill the information
+Click the ‘Epoch--Vote Next Epoch’ and fill the information.
 
 .. image:: ../../_static/wallet/localnode/vote.png
 
@@ -39,20 +41,20 @@ Click the **Vote Next Epoch** button and fill the information
 | Amount: 	the amount(pi) you wanna deposit
 | Salt:		can be whatever you want
 
-If you vote success, the wallet will return a transaction hash
+If you vote successfully, the wallet will return a transaction hash. Please remember all parameters you set!
 
 .. image:: ../../_static/wallet/localnode/votehash.png
 
 ===========
 Reveal Vote
 ===========
-Click the **Reveal Vote** button and fill the information
+Click the ‘Epoch--Reveal Vote’ and fill the information
 
 .. image:: ../../_static/wallet/localnode/reveal.png
 
 | From, PubKey, Amount and Salt must be the same with the value you set on vote.
 | BLS Private Key: bls private key included in priv_validator.json
 
-If you vote success, the wallet will return a transaction hash
+If you vote successfully, the wallet will return a transaction hash.
 
 .. image:: ../../_static/wallet/localnode/revealhash.png

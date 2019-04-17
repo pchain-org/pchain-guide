@@ -19,14 +19,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'Pchain Documents'
-copyright = u'2019, pchain'
-author = u'pchain'
+project = u'PCHAIN Documents'
+copyright = u'2019, PCHAIN'
+author = u'PCHAIN'
 
 # The short X.Y version
 version = u''
 # The full version, including alpha/beta/rc tags
-release = u'pchain'
+release = u'PCHAIN'
 
 
 # -- General configuration ---------------------------------------------------
@@ -137,8 +137,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'index.tex', u'Pchain Documentation',
-     u'liaoyd', 'manual'),
+    (master_doc, 'index.tex', u'PCHAIN Documentation',
+     u'PCHAIN', 'manual'),
 ]
 
 
