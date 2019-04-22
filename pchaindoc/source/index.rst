@@ -10,6 +10,7 @@ Welcome to Pchain Documentation!
    :maxdepth: 3
    :caption: Contents:
 
+   pchain/introduction
    node/GettingStart
    wallet/GettingStart 
    
