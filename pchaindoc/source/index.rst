@@ -11,10 +11,13 @@ Welcome to Pchain Documentation!
    :caption: Contents:
 
    pchain/introduction
+   pchain/deployment
+   pchain/developer
+   pchain/tools
+   pchain/faq
    node/GettingStart
    wallet/GettingStart 
    
-
 
 
 
