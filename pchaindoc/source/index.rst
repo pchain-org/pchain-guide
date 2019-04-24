@@ -10,16 +10,7 @@ Welcome to Pchain Documentation!
    :maxdepth: 3
    :caption: Contents:
 
-   pchain/introduction
-   pchain/deployment
-   pchain/developer
-   pchain/tools
-   pchain/faq
-   node/GettingStart
-   wallet/GettingStart 
-   
-
-
+   pchain/GettingStart
 
 
 Indices and tables
