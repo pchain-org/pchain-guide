@@ -2,6 +2,17 @@
 PCHAIN Tools
 ===================
 
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents:
+
+   ../wallet/GettingStart
+   ../wallet/LightWallet
+   ../wallet/LocalNode
+   ../wallet/Deploy
+
+
 ---------------
 Tools
 ---------------
@@ -17,3 +28,6 @@ Tools
     Wallet `download <https://github.com/pchain-org/wallet/releases>`_.
 
     Developer `model <http://developer.pchain.org>`_.
+
+
+

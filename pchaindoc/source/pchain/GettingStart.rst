@@ -12,8 +12,5 @@ PCHAIN Contents
    tools
    faq
 
-   ../wallet/GettingStart
-   ../wallet/LightWallet
-   ../wallet/LocalNode
-   ../wallet/Deploy
+
 
