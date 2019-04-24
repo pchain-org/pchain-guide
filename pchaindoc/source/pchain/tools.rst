@@ -8,14 +8,11 @@ PCHAIN Tools
    :caption: Contents:
 
    ../wallet/GettingStart
-   ../wallet/LightWallet
-   ../wallet/LocalNode
-   ../wallet/Deploy
-
 
 ---------------
 Tools
 ---------------
+
 
     Java API `pweb3j <https://github.com/pchain-org/pweb3j>`_.
 
