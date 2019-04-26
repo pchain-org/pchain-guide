@@ -2,7 +2,7 @@
 PCHAIN Introduction
 ===================
 
-    Welcome to `pchain <https://github.com/pchain-org/pchain>`_.
+    Welcome to `PCHAIN <https://github.com/pchain-org/pchain>`_.
 
 -------------------
 Introduction
