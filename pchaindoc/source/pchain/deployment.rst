@@ -35,6 +35,7 @@ Child Chain
     2) How to `Join <https://github.com/pchain-org/pchain/wiki/JSON-RPC#chain_joinchildchain>`_ Child Chain.
 
 
+    3) How to sync and run `child <https://github.com/pchain-org/pchain/wiki/How-to-sync-and-run-child_0>`_.
 
 ------------------
 Candidate

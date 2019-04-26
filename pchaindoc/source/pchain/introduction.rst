@@ -33,9 +33,6 @@ Multi Chain
 
    What is `Multi Chain <https://github.com/pchain-org/pchain/wiki/Multi-Chain>`_.
 
-   How to sync and run `child <https://github.com/pchain-org/pchain/wiki/How-to-sync-and-run-child_0>`_.
-
-
 
 PDBFT
 
