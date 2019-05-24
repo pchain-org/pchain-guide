@@ -1,0 +1,274 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Multi Chain &mdash; PCHAIN Documents PCHAIN documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Mining" href="mining.html" />
+    <link rel="prev" title="PDBFT Consensus Algorithm" href="pdbftconsensus.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PCHAIN Documents
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="introduction.html">Introduction</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="whatispchain.html">What is Pchain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pdbftconsensus.html">PDBFT Consensus Algorithm</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Multi Chain</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#responsibilities-of-different-types-of-chain">responsibilities of different types of chain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#design-of-multi-chain">design of multi-chain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-multi-chain-can-supply">what multi-chain can supply</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mining.html">Mining</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rewardschema.html">Reward Schema</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pchainclient/pchainclient.html">Pchain Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer/overview.html">Developer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wallet/GettingStart.html">PIWallet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PMetamask/pmetamask.html">PMatemask</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Q&amp;A/q&amp;a.html">Q&amp;A</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PCHAIN Documents</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="introduction.html">Introduction</a> &raquo;</li>
+        
+      <li>Multi Chain</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/introduction/multichain.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="multi-chain">
+<h1>Multi Chain<a class="headerlink" href="#multi-chain" title="Permalink to this headline">¶</a></h1>
+<p>Multi-chain is the organization structure of co-existing chains in pchain, it contains one main chain and necessary number of parallel child chains.</p>
+<div class="section" id="responsibilities-of-different-types-of-chain">
+<h2>responsibilities of different types of chain<a class="headerlink" href="#responsibilities-of-different-types-of-chain" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Pchain has two types of chains, one is main chain, there is only one main chain in pchain; another is child-chain, there could be many, and they are identical and independent.</div>
+</div>
+<div class="line-block">
+<div class="line">Main chain is responsible for balance record/transfer, and storage of child-chains’ data. Child is responsible for running smart contract. For both main chain and child chains, PAI(pchain’s token) is paid for their transaction execution. PAI in mains and child chains have the same value, and can be transferred between main chain and child chains.</div>
+</div>
+</div>
+<div class="section" id="design-of-multi-chain">
+<h2>design of multi-chain<a class="headerlink" href="#design-of-multi-chain" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">every chain has its own stack(consensus, transaction, block, EVM)</p>
+<blockquote>
+<div><p>In pchain, main chain and child chains run their stacks individually, these stacks share same logic for most modules, such as consensus algorithm(PDBFT), receive and process of transaction, storage of block, execution of EVM, etc.</p>
+<p>The difference between main chain’s stack and child chain’s stack is: the stack of main chain limits deployment of smart contract; the stack of child chains does not issue their own token, main chain and child chains share one PAI.</p>
+</div></blockquote>
+</li>
+<li><p class="first">rpc</p>
+<blockquote>
+<div><p>Pchain writes specific RPC logic for multi-chain, every child handles its own RPC requirements individually. When calling, it just needs adding chain id in url’s path to differentiate the chain. For example, when access child chain ‘childchain-0’, the url to POST is <a class="reference external" href="http://pchain-node/childchain-0">http://pchain-node/childchain-0</a>.</p>
+</div></blockquote>
+</li>
+<li><p class="first">p2p</p>
+<blockquote>
+<div><p>By taking advantage of design of ethereum’s P2P module, when initials and starts one chain, simply adding the mapping of chain and one sub protocol(just supplies a name) into ProtocolManager will make p2p messages are correctly routed within related chains.</p>
+</div></blockquote>
+</li>
+<li><p class="first">chain manager and cross-chain helper</p>
+<blockquote>
+<div><p>There are 2 entities outside the stacks coordinating the chains. One is ChainManager, which holds all chain’s information such as epochs and their validators, and also manages the initialing/start process of all chain.</p>
+<p>Another is CrossChainHelper, which is injected into every chain’s stack. When main/child chain needs to retrieve cross-chain information or call cross-chain functions, CrossChainHelper will come in handy.</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="what-multi-chain-can-supply">
+<h2>what multi-chain can supply<a class="headerlink" href="#what-multi-chain-can-supply" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Easily create company’s own chain</p>
+<blockquote>
+<div><p>Any company has enough PAI and enough valitadors can create one child-chain in pchain. And this child chain would act as a normal public chain or consortium chain, the company will get all features blockchain technology supplies.</p>
+</div></blockquote>
+</li>
+<li><p class="first">multi-chain can co-operate together to achieve large scale business logic</p>
+<blockquote>
+<div><p>Because every single chain has its own process power, when business modules can be split apart and independent to each other, then every module can be deployed in one chain. By this way, even very large business can run on pchain with collaborating its modules on different chains.</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="mining.html" class="btn btn-neutral float-right" title="Mining" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pdbftconsensus.html" class="btn btn-neutral float-left" title="PDBFT Consensus Algorithm" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, PCHAIN
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
