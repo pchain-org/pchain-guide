@@ -1,7 +1,7 @@
 ===============
-PMatemask
+PMetamask
 ===============
-PMatemask is a plug-in wallet.
+PMetamask is a plug-in wallet.
 
 ------------
 Installation
