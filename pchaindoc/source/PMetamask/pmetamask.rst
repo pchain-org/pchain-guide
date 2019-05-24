@@ -77,6 +77,7 @@ After deployed successfully, you can debug the contract
 .. image:: ../_static/pmatemask/interact1.png
 
 .. image:: ../_static/pmatemask/interact2.png
+
 | If there are operations need to spend Gas,  you may need confirm in the pop-up PMetamask dialog or in PMetamask directly. 
 | If the transaction failed, you can try to resend it or change the gas fee according to the returned error. 
 
