@@ -130,7 +130,7 @@ Once you apply candidate successfully, you can cancel it before the Epoch reache
 | **Notice:**
 | You can do this on both chain, the RPC URL on main chain and child chain is different:
 | Main chain: 	http://yourip:6969/pchain
-| Child chain:	http://yourip:6969/child_00
+| Child chain:	http://yourip:6969/child_0
 
 1) Canceling your submission after selected to be Validator: your staked PI will be unlocked and all the delegated tokens you received will be automatically returned to each delegator.once the Epoch reaches 100% height.
 2) Canceling your submission after you failed being elected Validator: the cancelation will be effective immediately since there are no Validator duties to be completed, your staked PI will be unlocked, and all the delegated tokens you received automatically returned to each delegator balance.

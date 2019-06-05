@@ -10,5 +10,5 @@ Introduction
    whatispchain
    pdbftconsensus
    multichain
-   mining
+   staking
    rewardschema
