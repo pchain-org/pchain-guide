@@ -1,3 +1,5 @@
+.. _Sync child chain:
+
 ========================
 Sync and Run Child Chain
 ========================

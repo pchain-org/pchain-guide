@@ -29,9 +29,16 @@ You can delegate by RPC `del_delegate <https://github.com/pchain-org/pchain/wiki
 ::
 	curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"del_delegate","params":["your address","candidates address", "amount you wanna delegate"],"id":1}' localhost:6969/chainid
 
+.. _Client Cancel Delegation:
+
 >>>>>>>>>>>>>>>>>>>>>
 Cancel Delegate
 >>>>>>>>>>>>>>>>>>>>>
+
+1) If your candidate is validator in current Epoch, the cancelation will be effective immediately. Your PI will be automatically unlocked to your balance when the current Epoch reaches 100%.
+
+2) If your candidate is not validator in current Epoch, then the cancelation will take effect immediately and your PI will be automatically unlocked to your balance.
+
 
 You can delegate by RPC `del_canceldelegate <https://github.com/pchain-org/pchain/wiki/JSON-RPC#del_canceldelegate>`_.
 ::

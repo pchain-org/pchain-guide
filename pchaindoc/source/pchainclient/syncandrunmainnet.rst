@@ -1,3 +1,5 @@
+.. _Sync main chain:
+
 ====================
 Sync and Run Mainnet
 ====================

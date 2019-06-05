@@ -1,11 +1,14 @@
+.. _Client Validator:
+
 =======================
 How to Become Validator
 =======================
 
 Before you vote to become validator, make sure you have done things bellow: 
+
 - sync and run pchain 
 - have an address and consensus keys
-- have at least 10k PI on your address
+- have at least 100k PI on your address
 
 You can choose to apply candidates first so you can let other delegate to you. This is an option, not neccessity.
 
@@ -30,7 +33,7 @@ Now you can prepare the parameters will used during vote and reveal vote, you sh
 - address 
 - consensus public key   //contains in priv_validator.json
 - consensus private key  //contains in priv_validator.json
-- amount           //should be at least 10k PI and equal or larger than total_depositBalance + total_proxiedBalance
+- amount           //should be at least 100k PI and equal or larger than total_depositBalance + total_proxiedBalance
 - salt             
 
 If you are not sure what amount should set, you can check your full balance by RPC `eth_getFullBalance <https://github.com/pchain-org/pchain/wiki/JSON-RPC#eth_getFullBalance>`_.

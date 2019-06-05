@@ -15,6 +15,7 @@ Pchain client is the command line interface for running a full pchain node imple
    :maxdepth: 3
    :caption: Contents:
 
+   requirement
    installation
    syncandrunmainnet
    syncandrunchildchain

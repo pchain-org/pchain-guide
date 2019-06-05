@@ -1,3 +1,5 @@
+.. _Create Your Account:
+
 ===================
 Create Your Account
 ===================

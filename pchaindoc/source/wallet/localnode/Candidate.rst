@@ -1,10 +1,13 @@
+.. _Wallet Candidate:
+
 ======================================
 How to apply for a Validator Candidate
 ======================================
 
-Note : you can do this only on wallet's local node mode, please go to this `guide <https://pchaindoc.readthedocs.io/en/latest/wallet/LocalNode.html>`_ to set up the RPC URL.
+Before you vote to become validator by PIWallet, make sure you have done things bellow: 
 
-| You can apply for a candidate via PIwallet under the local mode. If you are a developer, you can also `call for RPC <https://github.com/pchain-org/pchain/wiki/How-to-Become-a-Candidate>`_ to apply.
+- :ref:`set up the RPC URL <Local Node Mode>` 
+- have at least 10k PI on your address
 
 First, unlock your account. (Please do not keep your account unlock for long time, we recommand set the 'unlockDuration' to 300. If you set it to 0, your account will unlock forever unless you lock it manually)
 
@@ -36,9 +39,17 @@ Click ‘Delgate--Recommended Candidates’ and click your address from this lis
 
 If your submission is rejected, PCHAIN team will inform you with email after 2 business days.
 
+.. _Wallet Cancel Candidate:
+
 ========================
 How to cancel Candidate
 ========================
+
+Once you apply candidate successfully, you can cancel it via calling for RPC or PCHAIN wallet before the Epoch reaches 75%.
+1) Canceling your submission after selected to be Validator: your staked PI will be unlocked and all the delegated tokens you received will be automatically returned to each delegator.once the Epoch reaches 100% height.
+2) Canceling your submission after you failed being elected Validator: the cancelation will be effective immediately since there are no Validator duties to be completed, your staked PI will be unlocked, and all the delegated tokens you received automatically returned to each delegator balance. 
+
+
 
 You can cancel Candidate via PIwallet (Local node )or `call for RPC <https://github.com/pchain-org/pchain/wiki/How-to-Become-a-Candidate>`_ before starting voting for next Epoch Validator.
 
@@ -49,6 +60,8 @@ Click ‘Developer--Wallet Mode--Local Node--Candidate--Cancel Candidate’.
 Confirm the candidate address that you want to cancel and click ‘Cancel’.
 
 .. image:: ../../_static/wallet/localnode/clickcancelcandidate.png
+
+
 
 
 

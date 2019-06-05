@@ -1,9 +1,41 @@
+.. _Wallet Validator:
+
+=========================
 How to become validator
 =========================
-Note : you can do this only on wallet's local node mode, please go to this `guide <https://pchaindoc.readthedocs.io/en/latest/wallet/LocalNode.html>`_ to set up the RPC URL.
 
+Before you vote to become validator by PIWallet, make sure you have done things bellow: 
 
-First of all, make sure you have bls' key for consensus, thy are included in file `priv_validator.json`. (If you don't have one, follow `this <https://github.com/pchain-org/pchain/wiki/How-To-Become-A-Validator>`_ to generate). Here is an example. 
+- :ref:`set up the RPC URL <Local Node Mode>` 
+- have at least 100k PI on your address
+
+You can choose to apply candidates first so you can let other delegate to you. This is an option, not neccessity.
+
+Pchain have 12 epochs per year, and in each epoch there are 4 phases.
+
++------------+--------------------------------------+------------------------------+
+| Phase      | Block Number                         | What you can do              | 
++============+======================================+==============================+
+| 0% ~ 75%   | start_block ~ vote_start_block - 1   | apply candidates and delegate| 
++------------+--------------------------------------+------------------------------+
+| 75% ~ 85%  | vote_start_block ~ vote_end_block    | vote                         |
++------------+--------------------------------------+------------------------------+
+| 85% ~ 95%  | reveal_start_block ~ reveal_end_block| reveal vote                  |
++------------+--------------------------------------+------------------------------+
+| 95% ~ 100% | reveal_end_block + 1 ~ end_block     | check next epoch's info      |
++------------+--------------------------------------+------------------------------+
+
+You can check current phase in PIWallet **Epoch** page.
+
+Now you can prepare the parameters will used during vote and reveal vote, you should have:
+
+- address 
+- consensus public key   //contains in priv_validator.json
+- consensus private key  //contains in priv_validator.json
+- amount           //should be at least 10k PI and equal or larger than total_depositBalance + total_proxiedBalance
+- salt       
+
+First of all, make sure you have bls' key for consensus, thy are included in file `priv_validator.json`. (If you don't have one, follow :ref:`Create Your Account` to generate). Here is an example. 
 
 .. code-block:: json
 
@@ -19,35 +51,26 @@ First of all, make sure you have bls' key for consensus, thy are included in fil
 	        ]
 	}
 
-EPOCH is the update cycle of the Validator, which is about 30 days on mainnet.
 
-To become a PCHAIN's validator, you can participate by voting. The voting is divided into two phases: Vote and Reveal Vote.
-
-You can view epoch's information on wallet `Epoch` page.
-
-.. image:: ../../_static/wallet/localnode/epoch.png
-
-You should vote during vote duration (vote_end_block >= block height >= vote_start_block) and reveal during revealduration (reveal_end_block >= block height >= reveal_start_block).
-
-====
+----
 Vote
-====
+----
 Click the ‘Epoch--Vote Next Epoch’ and fill the information.
 
 .. image:: ../../_static/wallet/localnode/vote.png
 
 | From: 	the address to receive mining reward 
 | PubKey:	bls public key included in priv_validator.json
-| Amount: 	the amount(pi) you wanna deposit
+| Amount: 	the amount(PI) you wanna deposit(must equal or larger than total_depositBalance + total_proxiedBalance)
 | Salt:		can be whatever you want
 
-If you vote successfully, the wallet will return a transaction hash. Please remember all parameters you set!
+If you vote successfully, the wallet will return a transaction hash. **Please remember all parameters you set!**
 
 .. image:: ../../_static/wallet/localnode/votehash.png
 
-===========
+-----------
 Reveal Vote
-===========
+-----------
 Click the ‘Epoch--Reveal Vote’ and fill the information
 
 .. image:: ../../_static/wallet/localnode/reveal.png
