@@ -3,7 +3,7 @@ Staking
 ========
 
 | Welcome to PCHAIN staking.
-PCHAIN is the 1st native EVM multichain enables the interoperability of child chain and main chain. Making large scale blokchain application possible.
+PCHAIN is the 1st native EVM multichain enables the interoperability of child chain and main chain. Making large scale blockchain application possible.
 We welcome more PCHAIN community members to run on PCHAIN and jointly make the mainnet stable with PCHAIN innovative PDBFT consensus algorithm, which can greatly reduce communication cost from N^2 to N comparing with traditional BFT algorithm and effectively reduce the centralization problem as the number of nodes is limited. Meanwhile, PCHAIN adopts Dynamic Bidding including voting and revealing vote and it enables the validator election more fair and secure in epoch switch. For the non-technicals, you can delegate PI via Safe Delegation, effectively avoiding the risk of evil by candidates. 
 PCHAIN wallet has been released. It will help you participate in Validator competition more easier and quickly. Meanwhile, PCHAIN staking mechanism is the same on main chain and child chain.
 
@@ -22,7 +22,7 @@ PCHAIN holders with a minimum of 100K+ PI and the required configuration set-up 
 If PCHAIN holders want to get the supports from delegation, they should be with a minimum of 10k PI and the required configuration set-up, and should apply for candidate first. Then they can compete against bidders for the validator via voting. Dynamic staking ranking at each voting round will then determine if selected to be a next Epoch Validator.
 
 - Delegator 
-PCHAIN holders with a minimum of 1K PI can delegate PI to candidate(s). Once his candiadate succeed in voting for validator, he will get his PoS Mining reward based on his delegation percentage.
+PCHAIN holders with a minimum of 1K PI can delegate PI to candidate(s). Once his candidate succeed in voting for validator, he will get his PoS Mining reward based on his delegation percentage.
 
 We will introduce how to do those step by step.
 
@@ -50,7 +50,7 @@ Once your candidate succeed in voting for validator, then you will get PoS Minin
 Bidding
 --------------------
 
-Before we introduce how to bid, you must know that become a validator is a very intersting but complex thing. If you do not have any technical background or are new to blockchain, we recommend you to delegate to other candidate(s). Since once you become validator, you have to spend some time to monitor your node and even send your node's log to our team sometimes. But if you are determined to become pchain's validator, we will help you as much as we can.
+Before we introduce how to bid, you must know that become a validator is a very interesting but complex thing. If you do not have any technical background or are new to blockchain, we recommend you to delegate to other candidate(s). Since once you become validator, you have to spend some time to monitor your node and even send your node's log to our team sometimes. But if you are determined to become pchain's validator, we will help you as much as we can.
 
 You must have done things below before bidding on any chains:
 
@@ -132,7 +132,7 @@ Once you apply candidate successfully, you can cancel it before the Epoch reache
 | Main chain: 	http://yourip:6969/pchain
 | Child chain:	http://yourip:6969/child_0
 
-1) Canceling your submission after selected to be Validator: your staked PI will be unlocked and all the delegated tokens you received will be automatically returned to each delegator.once the Epoch reaches 100% height.
+1) Canceling your submission after selected to be Validator: your staked PI will be unlocked and all the delegated tokens you received will be automatically returned to each delegator once the Epoch reaches 100% height.
 2) Canceling your submission after you failed being elected Validator: the cancelation will be effective immediately since there are no Validator duties to be completed, your staked PI will be unlocked, and all the delegated tokens you received automatically returned to each delegator balance.
 
 
