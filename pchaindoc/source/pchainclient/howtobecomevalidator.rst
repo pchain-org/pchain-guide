@@ -4,7 +4,7 @@
 How to Become Validator
 =======================
 
-Before you vote to become validator, make sure you have done things bellow: 
+Before you vote to become validator, make sure you have done things below: 
 
 - sync and run pchain 
 - have an address and consensus keys

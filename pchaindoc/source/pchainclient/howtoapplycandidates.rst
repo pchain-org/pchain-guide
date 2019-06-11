@@ -4,7 +4,7 @@
 How to Apply Candidates
 =======================
 
-Before you apply candidates, make sure you have done things bellow: 
+Before you apply candidates, make sure you have done things below: 
 
 - sync and run pchain 
 - have an address and consensus keys
@@ -26,10 +26,10 @@ Pchain have 12 epochs per year, and in each epoch there are 4 phases. You can ap
 
 You can check the current stage by our `Monitor <https://monitor.pchain.org>`_, our by RPC `tdm_getEpoch <https://github.com/pchain-org/pchain/wiki/JSON-RPC#tdm_getEpoch>`_.
 
-Now you can prepare the parameters will used after, you should have:
+Now you can prepare the parameters will used later, you should have:
 
 - address 
-- security deposit  //amount of the security deposit PAI (minimum 1k PI)
+- security deposit  //amount of the security deposit PI (minimum 10k PI)
 - commission  // the commission fee percentage of each Block Reward be charged from delegator, when Candidate become a Validator (between 0 - 100)
 
 Note: you can also apply candidates by PIWallet, it will make this process much easier.
