@@ -153,5 +153,7 @@ Description of the various balance below：
 6) proxiedBalance:  total delegated amount from other address(es).
 7) rewardBalance:  total pending reward amount, it will be unlocked 1/12 at the end of each Epoch.
 
+For more detail, please check :ref:`What is FullBalance<What is FullBalance>`.
+
 
 

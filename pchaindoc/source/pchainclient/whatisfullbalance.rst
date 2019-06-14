@@ -1,3 +1,5 @@
+.. _What is FullBalance:
+
 ===================
 What is FullBalance
 ===================
@@ -115,7 +117,7 @@ For detail of each deposit proxied balance, see proxied_detail field
 
 6.	total_pendingRefundBalance
 The total balance that other address delegate their balance amount to your address and wait for refund when other address revokes their delegation. The balance will refund when epoch reach its end.
-For detail of each deposit proxied balance, see proxied_detail field
+For detail of each pending refund balance, see proxied_detail field
 
 7.	total_rewardBalance
 The total balance that will reward to address in the future, after each epoch reach its end, the reward balance of epoch will move to your balance field for free to use.
