@@ -69,7 +69,8 @@ If you wanna migrate your pchain to another computer, just install pchain on you
 ----------------------------------------------------------------------
 As validator, should I do the vote and the reveal vote for each epoch?
 ----------------------------------------------------------------------
-If you wanna keep the same deposit amount in next epoch, you don't need to proceed it again. Otherwise you should participate in this process and set the amount.
-e.g your current deposit amount is A
-    the deposit amount you wanna add is B
-    then you should set the amount to A+B during vote and reveal vote
+If you wanna keep the same deposit amount in next epoch, you don't need to proceed it again. Otherwise you should participate in this process.
+
+| e.g your current deposit amount is A
+|     the deposit amount you wanna add is B
+|     then you should set the amount to A+B during vote and reveal vote
