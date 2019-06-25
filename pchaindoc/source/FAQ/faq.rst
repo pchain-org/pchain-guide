@@ -59,3 +59,17 @@ If you wanna send any transactions by PIWallet local node mode, you should keep 
 How to check if my node running correctly?
 ------------------------------------------------------------
 First, check if you are running the latest version, you can find the latest verison from our `github <https://github.com/pchain-org/pchain>`_. Then make sure the peers connected to your node is more than 2/3 validator number by RPC. And also check if you are syncing to the latest height, you can check the latest height on our `Monitor <https://monitor.pchain.org/>`_.
+
+
+---------------------------------------------
+How to migrate my pchain to another computer?
+---------------------------------------------
+If you wanna migrate your pchain to another computer, just install pchain on your new computer, and copy priv_validator.json and nodekey to your new computer.
+
+----------------------------------------------------------------------
+As validator, should I do the vote and the reveal vote for each epoch?
+----------------------------------------------------------------------
+If you wanna keep the same deposit amount in next epoch, you don't need to proceed it again. Otherwise you should participate in this process and set the amount.
+e.g your current deposit amount is A
+    the deposit amount you wanna add is B
+    then you should set the amount to A+B during vote and reveal vote

@@ -122,7 +122,8 @@ For detail of each pending refund balance, see proxied_detail field
 7.	total_rewardBalance
 The total balance that will reward to address in the future, after each epoch reach its end, the reward balance of epoch will move to your balance field for free to use.
 Every time when the address produces a new Block, this address will be considered as the recipient of the reward. Below is how the reward being calculated
-For Main Chain:
+
+| For Main Chain:
 20% of block reward goes to Child Chain Foundation Address 0x991cf3cee2a55d06f9c7ba511bee3fad45a1bda7
 80% of block reward belongs to the miner. If the block miner has delegation from other address, deduct the commission fee first if any, then the remaining rewards will be distributed by proportion.
 

@@ -1,3 +1,5 @@
+.. _Staking:
+
 ========
 Staking
 ========
@@ -30,7 +32,7 @@ We will introduce how to do those step by step.
 Preparation
 -----------
 
-Currently, you can swap native PI via `weekly token swap application <https://pchain.org/applytokenswap>`_ before public token swap released. After swap, you can only check your balance via PCHAIN wallet.
+Currently, you can swap native PI via :ref:`token swap on PIWallet<Token Swap>`.
 
 
 -------------------
