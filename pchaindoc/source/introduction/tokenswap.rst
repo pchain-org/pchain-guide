@@ -9,7 +9,7 @@ Reminders before you start token swap on PIwallet.
 1. Update PCHAIN Wallet to the latest version 1.0.4. Click `here <https://github.com/pchain-org/wallet/releases/edit/v1.0.4>`_ to download PIwallet.
 2. Ensure that you keep the private key or keystore file of the ERC20 PI address well.
 3. Ensure there is a minimum amount of ETH in your ERC20 PI address to cover the gas fee.
-4. After you send the swap transaction, you will receive your native PI in **1~2 bussiness days**.
+4. After you send the swap transaction, you will receive your native PI within **2 bussiness days** at most.
 
 Step 1: Open the PIwallet and click ‘Token Swap’ tab.
 
@@ -17,7 +17,7 @@ Step 1: Open the PIwallet and click ‘Token Swap’ tab.
 
 Step 2: Import your ERC20 PI address to PCHAIN wallet.
 
-	**Notice:** If you don't wanna import your current ERC20 address' private key or keystore to PIWallet, you can creat an ethereum address by MEW and tranfer all ERC20 PI to this new address and then do the token swap.
+	**Notice:** If you don't wanna import your current ERC20 address' private key or keystore to PIWallet, you can creat an ethereum address by MEW or imToken and tranfer all ERC20 PI to this new address and then do the token swap.
 
 	Option1: Click ‘Import Private Key ’, fill out its private key. Set password and repeat it. Then click ‘Import’ to confirm. 
 	Noticed: Please keep the password well by yourself.   
