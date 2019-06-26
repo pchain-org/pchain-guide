@@ -96,7 +96,7 @@ After you installed and synced pchain mainnet, you should also have at least 10k
 How to become validator
 >>>>>>>>>>>>>>>>>>>>>>>
 
-After you installed and synced pchain mainnet, you should also have at least 100k PI on your account. We provide 2 ways to apply candidate:
+After you installed and synced pchain mainnet, you should also have at least 100k PI on your account. We provide 2 ways to bid for validator:
 
 - :ref:`Bid for validator by PIWallet<Wallet Validator>`
 - :ref:`Bid for validator by RPC<Client Validator>`
@@ -110,7 +110,7 @@ After you installed and synced pchain mainnet, you should also have at least 100
 Cancel delegation
 -----------------
 
-Once you delegate successfully, you can cancel it before the Epoch reaches 75%. We provide 2 ways to cancel candidate:
+Once you delegate successfully, you can cancel it before the Epoch reaches 75%. We provide 2 ways to delegation:
 
 - :ref:`Cancel delegation by PIWallet<Wallet Cancel Delegation>`
 - :ref:`Cancel delegation by RPC<Client Cancel Delegation>`
