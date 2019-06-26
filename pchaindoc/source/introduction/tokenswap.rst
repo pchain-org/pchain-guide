@@ -69,6 +69,6 @@ Noticed: If the Etherscan page shows ‘pending’ status or ‘unable to locate
 
 Step 5: Click ‘Wallet’ tab to check your balance.
 
-.. image:: ../_static/tokenswap/tokenswap12.png
+.. image:: ../_static/tokenswap/tokenswap13.png
 
 Welcome to :ref:`stake on PCHAIN as Validator<Staking>`! 
