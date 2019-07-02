@@ -2,6 +2,19 @@
 FAQ
 ====
 
+-------------------------------------------------------------
+How many reward will I get if I succesful deposit on pchain?
+-------------------------------------------------------------
+Suppose your deposit amount is A, the total deposit of current epoch is B, the total block number of current block is C, the reward per block during current epoch is D, then your reward during current epoch will be about A/B*C*D.
+
+--------------------------------------------------------
+How do I know if I can be next epoch's validator or not?
+--------------------------------------------------------
+First of all, make sure you vote and reveal vote correctly.This can be check via tdm.getNextEpochVote() in pchain's console. If your deposit amount ranks before (number of current epoch's validator + number of next epoch's new bidders / 2 ), then you will be next epoch's validator. You can also check via tdm.getNextEpochValidators() to see if you are in the validator list.
+
+e.g currently we have 79 validators on main chain, and we got 5 bidder now, then the threshold ranking will be 79 + 5 / 2 = 81
+
+
 ----------------------------------------------------
 Can I run main chain and child chain on one machine?
 ----------------------------------------------------
