@@ -33,7 +33,7 @@ Now you can prepare the parameters will used during vote and reveal vote, you sh
 - address 
 - consensus public key   //contains in priv_validator.json
 - consensus private key  //contains in priv_validator.json
-- amount           //should be at least 100k PI and equal or larger than total_proxiedBalance
+- amount           //should be at least 100k PI and equal or larger than total_depositProxiedBalance+total_proxiedBalance
 - salt             
 
 If you are not sure what amount should set, you can check your full balance by RPC `eth_getFullBalance <https://github.com/pchain-org/pchain/wiki/JSON-RPC#eth_getFullBalance>`_.

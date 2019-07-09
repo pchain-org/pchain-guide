@@ -61,7 +61,7 @@ Click the ‘Epoch--Vote Next Epoch’ and fill the information.
 
 | From: 	the address to receive mining reward 
 | PubKey:	bls public key included in priv_validator.json
-| Amount: 	the amount(PI) you wanna deposit(must equal or larger than total_depositBalance + total_proxiedBalance)
+| Amount: 	the amount(PI) you wanna deposit(must equal or larger than total_depositProxiedBalance+total_proxiedBalance)
 | Salt:		can be whatever you want
 
 If you vote successfully, the wallet will return a transaction hash. **Please remember all parameters you set!**
