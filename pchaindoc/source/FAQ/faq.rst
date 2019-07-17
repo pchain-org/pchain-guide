@@ -3,7 +3,7 @@ FAQ
 ====
 
 -------------------------------------------------------------
-How many reward will I get if I succesful deposit on pchain?
+How many reward will I get if I successful deposit on pchain?
 -------------------------------------------------------------
 Suppose your deposit amount is A, the total deposit of current epoch is B, the total block number of current block is C, the reward per block during current epoch is D, then your reward during current epoch will be about A/B*C*D.
 
@@ -13,7 +13,6 @@ How do I know if I can be next epoch's validator or not?
 First of all, make sure you vote and reveal vote correctly.This can be check via tdm.getNextEpochVote() in pchain's console. If your deposit amount ranks before (number of current epoch's validator + number of next epoch's new bidders / 2 ), then you will be next epoch's validator. You can also check via tdm.getNextEpochValidators() to see if you are in the validator list.
 
 e.g currently we have 79 validators on main chain, and we got 5 bidder now, then the threshold ranking will be 79 + 5 / 2 = 81
-
 
 ----------------------------------------------------
 Can I run main chain and child chain on one machine?
@@ -87,3 +86,15 @@ If you wanna keep the same deposit amount in next epoch, you don't need to proce
 | e.g your current deposit amount is A
 |     the deposit amount you wanna add is B
 |     then you should set the amount to A+B during vote and reveal vote
+
+-------------------------------------------------------------------------
+What should I do if I wanna change my commission fee if I am a candidate?
+--------------------------------------------------------------------------
+
+ You need to cancel candidate and apply candidate on chain again(remember once you cancel your proxied amount will be return to delegators). And if you can cancel and apply on chain again very quickly, you may dont need to apply on website. After done things on chain you can check on PIWallet if you are still on the candidate list, if not please apply on website again, if you are still on, just wait for couple hours for PIWallet to refresh the commission fee.
+
+-------------------------------------------------------------------------
+What should I do if I accidently transfer ERC20 PI to native PI address?
+-------------------------------------------------------------------------
+please follow this `video <https://www.youtube.com/watch?v=TRHv0sNS37U>`_.
+ 

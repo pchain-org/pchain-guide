@@ -19,4 +19,5 @@ Welcome to PCHAIN Documentation!
    wallet/GettingStart
    PMetamask/pmetamask
    FAQ/faq
+   FAQ_zh/faq_zh
 

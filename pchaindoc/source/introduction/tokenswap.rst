@@ -6,7 +6,7 @@ Token Swap
 
 Reminders before you start token swap on PIwallet.
 
-1. Update PCHAIN Wallet to the latest version 1.0.4. Click `here <https://github.com/pchain-org/wallet/releases/v1.0.4>`_ to download PIwallet.
+1. Update PCHAIN Wallet to the latest version 1.0.4. Click `here <https://github.com/pchain-org/wallet/releases/v1.0.5>`_ to download PIwallet.
 2. Ensure that you keep the private key or keystore file of the ERC20 PI address well.
 3. Ensure there is a minimum amount of ETH (recommend 0.00036 ether which is 6 gwei*60,000) in your ERC20 PI address to cover the gas fee.
 4. After you send the swap transaction, you will receive your native PI within **2 business days** at most.
