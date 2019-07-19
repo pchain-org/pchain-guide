@@ -15,7 +15,7 @@ Step 1: Open the PIwallet and click ‘PI to PIBNB’ tab.
 
 .. image:: ../_static/pitopibnb/0.jpg
 
-Step 2: Create or import your BNB address to PIWallet.
+Step 2: Create or import your BNB address to PIWallet.(After create or import make sure your address start with "**bnb**", if not, update your PIWallet to the latest version)
 
 You can import your BNB address by private key or wallet seed(mnemonic words) or you can just create a new address. We will take 'create PIBNB' as an example.
 
