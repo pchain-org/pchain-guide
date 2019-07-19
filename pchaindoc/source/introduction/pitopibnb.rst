@@ -6,7 +6,7 @@ Native PI to PIBNB Token Swap
 
 Reminders before you start swap PI to PIBNB on PIwallet.
 
-1. Update PCHAIN Wallet to the latest version 1.0.5. Click `here <https://github.com/pchain-org/wallet/releases/v1.0.4>`_ to download PIWallet.
+1. Update PCHAIN Wallet to the latest version. Click `here <https://github.com/pchain-org/wallet/releases>`_ to download PIWallet.
 2. Ensure that you keep the private key or keystore file or the mnemonic word of the BNB address well.
 3. The minimun PI swap amount is 1000PI/time and the commission fee of swap is 25PI/time, you should also have minimun of 0.0005PI left for transaction gas.
 4. After you send the swap transaction, you will receive your PIBNB within **2 business days** at most, but the process will finished in several mins usually.
