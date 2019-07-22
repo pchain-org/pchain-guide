@@ -82,6 +82,43 @@ FAQ（常见问题）
 .. image:: ../_static/faq_zh/0.png
  
 然后用其他erc20钱包（比如MEW和ImToken等等），把私钥导入，然后把erc20转回到你原来的地址。
+
+
+--------------------------------------------------
+如何恢复不正常的跨链转账?
+--------------------------------------------------
+
+如果你在进行跨链转转账后的五分钟后依然没有收到PI，请根据下面的步骤操作。
+
+打开PIWallet, 前往 “ Wallet ” 页面, 找到交易记录然后点击 “detail”.
+
+.. image:: ../_static/q&a/recover0.png
+
+- 情况1
+点击“Check ”, 如果返回 “Successful transaction”, 说明这笔交易现在已经成功了。请再次检查你的PI余额。 
+
+.. image:: ../_static/q&a/recover1.png
+ 
+- 情况 2
+如果你点击“check”之后得到 “Failed Transaction”的返回, 说明你需要重新发送去恢复这条交易，请点击“Resend”。
+
+.. image:: ../_static/q&a/recover2.png
+
+.. image:: ../_static/q&a/recover3.png
+
+填入你的密码
+
+.. image:: ../_static/q&a/recover4.png
+
+确认交易信息然后点击“Resend transaction”.
+
+.. image:: ../_static/q&a/recover5.png
+
+如果返回了交易hash，说明resend成功了，你可以在两分钟后再次查看你的余额。
+
+如果它返回了下图中的“Error”，请点击第一条交易记录的“Detail”并保存。将上述信息发送给我们(op@pchain.org)。我们将在1~2个工作日内会帮助你恢复这条交易。 
+
+.. image:: ../_static/q&a/recover6.png
  
 
 
