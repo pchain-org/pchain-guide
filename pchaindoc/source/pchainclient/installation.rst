@@ -12,6 +12,9 @@ Here is our system :ref:`system requirement <Requirement>` and you should open p
 Ubuntu
 ------
 
+- Install from AWS Marketplace
+You can install from :ref:`AWS Marketplace <AWS>`
+
 - Install from release
 If you wanna become validator, we recommend you to install from release, the latest version can be find from `here <https://github.com/pchain-org/pchain/releases>`_. And we have a step by step `guide <https://github.com/pchain-org/pchain/wiki/Install-pchain-from-release>`_  to help you install pchain from release and will help you set up auto-upgrade scripts.
 

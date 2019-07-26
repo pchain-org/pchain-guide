@@ -149,7 +149,7 @@ Description of the various balance below：
 
 1) balance: total unlocked amount in current Epoch.
 2) delegateBalance:  total amount you delegate to other address(es).
-3) depositBalance:  total staked amount for Validator bidding.
+3) depositBalance:   the staked amount by yourself for Validator bidding.
 4) depositProxiedBalance:  the delegated amount that you staked for Validator bidding.
 5) pendingRefundBalance: total pending refund amount which will be return to delegators at the end of Current Epoch.
 6) proxiedBalance:  total delegated amount from other address(es).
