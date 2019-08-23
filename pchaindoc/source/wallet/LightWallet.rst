@@ -50,17 +50,40 @@ Pchain have 12 epochs per year, and in each epoch there are 4 phases.
 +------------+--------------------------------------+------------------------------+
 
 | If you do not want to run node on PCHAIN yourself, you can delegate PI to one / several Validator candidate(s) with PI wallet (Light wallet) during first phase.
-| First, choose one chain that you want to delegate tokens. And make sure the minimum balance with 1,000 PI.
+| 1.Click “Delegate” tab, you will see the Candidate list there. If you want to get more info about one Candidate, you can click “detail ”.
 
-.. image:: ../_static/wallet/delegatepage.png
+.. image:: ../_static/wallet/delegate0.png
 
-Click ‘Delegate--Recommended Candidates’ and choose one candidate address from this list. Fill the amount with at least 1,000 PI that you want to delegate to this address. Then click ‘Delegate’.
+2. Please make sure which chain and Candidate you want to delegate to. Then Click “Join”. 
+3. Fill in the delegate amount with at least 1,000 PI.
+The invite code is optional here, it’s designed for some programmes (not released now).
 
-.. image:: ../_static/wallet/clickdelegate.png
+.. image:: ../_static/wallet/delegate1.png
 
-After you delegate successfully, you can check your delegate balance here or go to ‘ Fullbalance’.
+4. Enter the password and confirm the transaction info again. 
 
-.. image:: ../_static/wallet/checkdelegate.png
+.. image:: ../_static/wallet/delegate2.png
+
+.. image:: ../_static/wallet/delegate3.png
+
+5. You can check the delegation details here.
+
+.. image:: ../_static/wallet/delegate4.png
+
+DETAIL: You can check the daily pos mining reward that you get.
+
+.. image:: ../_static/wallet/delegate5.png
+
+APPEND: You can delegate more PI to this Candidate before 75% of the Epoch height.
+CANCEL: You can cancel delegation before 75% of the Epoch height.
+
+6. “Delegate balance” is the amount you delegated to Candidate(s) who are mining blocks for reward as Validator(s) with your delegation.
+“Delegate to ** Candidate nodes” means the number of Candidate node(s) as Validator(s) who are mining blocks for reward with your delegation. 
+“Total pos mining reward” is the reward amount you got before 23:59:59 yesterday (UTC+8) . 
+“The annual return” = the daily reward/ the delegated amount *365*100%
+
+.. image:: ../_static/wallet/delegate5.png
+
 
 .. _Wallet Cancel Delegation:
 
@@ -75,14 +98,9 @@ You can cancel delegation before the current Epoch reaches 75%.
 2) If your candidate is not validator in current Epoch, then the cancelation will take effect immediately and your PI will be automatically unlocked to your balance.
 
 
-| Click ‘Delegate--Chain--Cancel Delegate’.
-
-.. image:: ../_static/wallet/canceldelegate.png
-
 | Choose the candidate that your want to cancel delegation to from the list. The default amount shows the total amount that you delegate to this address. 
 | You can cancel with total delegation amount. Also, you can define the amount that you want to decrease but ensure the delegate balance to this address is equal or greater than 1,000 PI.
 
-.. image:: ../_static/wallet/canceldelegatefromlist.png
 
 
 
