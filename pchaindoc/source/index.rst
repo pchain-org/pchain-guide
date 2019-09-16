@@ -20,4 +20,5 @@ Welcome to PCHAIN Documentation!
    PMetamask/pmetamask
    FAQ/faq
    FAQ_zh/faq_zh
+   Help/selfcheck
 
