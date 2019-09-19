@@ -10,6 +10,7 @@ FAQ
    canceldelegation
    node
    tokenswap
+   validator
 
 -------------------------------------------------------------
 How many reward will I get if I successful deposit on pchain?
