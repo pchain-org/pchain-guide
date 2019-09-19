@@ -2,6 +2,15 @@
 FAQ
 ====
 
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Contents:
+
+   canceldelegation
+   node
+   tokenswap
+
 -------------------------------------------------------------
 How many reward will I get if I successful deposit on pchain?
 -------------------------------------------------------------
@@ -133,3 +142,5 @@ If it returns with one transaction hash, it means resend successfully. You can c
 If it returns “Error” like the picture below, pls click “Detail” of the first transaction record and make a copy of the transaction hash. Then send this Tx hash & your address to PCHAIN Team (op@pchain.org). PCHAIN team will help you make this transaction successful in 1~2 business day(s). 
 
 .. image:: ../_static/q&a/recover6.png
+
+
