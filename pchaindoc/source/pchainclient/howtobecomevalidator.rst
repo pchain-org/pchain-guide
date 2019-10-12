@@ -68,11 +68,13 @@ and then type your parameters to generate the vote hash:
 ::
 	var address = "4CACBCBF218679DCC9574A90A2061BCA4A8D8B6C"; 
 	var pubkey = "085586D41F70435700850E19B7DE54B3E793C5EC4C6EC502D19030EF4F2122823E5A765E56CBA7B4C57E50561F77B022313C39895CA303F3C95D7B7282412F334778B95ACE046A79AEA4DB148334527250C8895AC5DB80459BF5D367236B59AF2DB5C0254E30A6D8CD1FA10AB8A5D872F5EBD312D3160D3E4DD496973BDC75E0"; 
-	var amount = "0x152d02c7e14af7000000"; 
+	var amount = "0x152d02c7e14af7000000";  
 	var salt = "ilovepchain"; //this string can be whatever you like
 	web3.getVoteHash(address,pubkey,amount,salt);
 	//"0x4dcb9f6e059051c58cc06ee0c038af4bffc18e85983540a72012bce56d2c37ec"
 Now you get the vote hash "0x4dcb9f6e059051c58cc06ee0c038af4bffc18e85983540a72012bce56d2c37ec". Notice the amount is in hex, if you don't know how to convert dec to hex, we suggest you do this by PIWallet, which will be much easier.
+
+Note: 1gwei = 1000000000wei = 0x3B9ACA00
 
 >>>>>
 Vote
