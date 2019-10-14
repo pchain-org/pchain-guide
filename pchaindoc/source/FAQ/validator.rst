@@ -35,3 +35,7 @@ The amount you deposit should be at least 100k PI and equal or larger than total
 There is no a guaranteed amount, the number of new validator is depends on how many address voted and reveal voted. If your deposit amount ranks before (number of current epoch's validator + number of next epoch's new bidders / 2 ), then you will be next epoch's validator. You can also check via tdm.getNextEpochValidators() to see if you are in the validator list.
 
 e.g currently we have 79 validators on main chain, and we got 5 bidder now, then the threshold ranking will be 79 + 5 / 2 = 81
+
+5.What is the minimun amount should I enter when I vote?
+
+The amount should be at least 10k PI and equal or larger than total_depositProxiedBalance+total_proxiedBalance-total_pendingRefundBalance. 
