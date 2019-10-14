@@ -32,7 +32,7 @@ Now you can prepare the parameters will used during vote and reveal vote, you sh
 - address 
 - consensus public key   //contains in priv_validator.json
 - consensus private key  //contains in priv_validator.json
-- amount           //should be at least 10k PI and equal or larger than total_depositBalance + total_proxiedBalance
+- amount           //should be at least 10k PI and equal or larger than total_depositProxiedBalance+total_proxiedBalance-total_pendingRefundBalance
 - salt       
 
 First of all, make sure you have bls' key for consensus, thy are included in file `priv_validator.json`. (If you don't have one, follow :ref:`Create Your Account` to generate). Here is an example. 
