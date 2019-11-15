@@ -7,10 +7,21 @@ FAQ
    :maxdepth: 3
    :caption: Contents:
 
-   canceldelegation
-   node
-   tokenswap
+   runnode
+   fullbalance
    validator
+   delegation
+   cancelation
+   stakingreward
+   monitor
+   piscan
+   tokenswap
+   piwallet
+   crosschaintx
+   .. canceldelegation
+   .. node
+   .. tokenswap
+   
 
 -------------------------------------------------------------
 How many reward will I get if I successful deposit on pchain?

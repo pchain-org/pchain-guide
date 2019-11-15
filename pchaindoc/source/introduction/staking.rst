@@ -106,6 +106,7 @@ After you installed and synced pchain mainnet, you should also have at least 100
 | Main chain: 	http://yourip:6969/pchain
 | Child chain:	http://yourip:6969/child_0
 
+.. _canceldelegation:
 -----------------
 Cancel delegation
 -----------------
@@ -119,7 +120,7 @@ Once you delegate successfully, you can cancel it before the Epoch reaches 75%. 
 
 2) If your candidate is not validator in current Epoch, then the cancelation will take effect immediately and your PI will be automatically unlocked to your balance.
 
-
+.. _cancelcandidate:
 ------------------
 Cancel candidate
 ------------------
