@@ -7,7 +7,7 @@ FAQ
    :maxdepth: 3
    :caption: Contents:
 
-   runnode
+   node
    fullbalance
    validator
    delegation

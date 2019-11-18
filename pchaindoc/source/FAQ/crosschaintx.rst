@@ -2,7 +2,9 @@
 Cross Chain Transaction
 =======================
 
+-------------------------------------------------------------
 1. How to recover the abnormal cross-chain transaction?
+-------------------------------------------------------------
 Because of the consensus network, some people may get issue on cross-chain transaction that the balance didn’t increase after at least 5 minutes. Here are the detailed operation to help you make the transaction successful.
 
 Open PIWallet, go to “ Wallet ” tab, find the transaction record and click “detail”.

@@ -2,10 +2,14 @@
 Full Balance
 ==============
 
+-------------------------------------------------------------
 1. Where can I find the node’s balance info and reward info 
+-------------------------------------------------------------
 You can go to PIwallet/ PIscan under “fullbalance” tag, or via call for the FullBalance RPC.
 
+-------------------------------------------------------------
 2. What’s the meaning of each balance type there ?
+-------------------------------------------------------------
 **balance**: The total unlocked amount.
 This balance also call free balance, means you can do anything on PCHAIN with this balance e.g transfer, delegate, vote,etc. Your transaction Gas Fee (gas price * used gas) will be deduct from this balance. 
 
