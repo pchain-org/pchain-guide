@@ -28,4 +28,6 @@ Confirm the swap info. Then click ‘Send Transaction’. It will go to Binance 
 
 .. image:: ../_static/pibnbtopi/4.png
 
+Step5: Click ‘Detail’ to check more swap transaction info.
+
 .. image:: ../_static/pibnbtopi/5.png
