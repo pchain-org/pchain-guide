@@ -13,4 +13,5 @@ Introduction
    staking
    tokenswap
    pitopibnb
+   pibnbtopi
    rewardschema
