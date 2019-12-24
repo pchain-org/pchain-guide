@@ -26,3 +26,4 @@ Pchain client is the command line interface for running a full pchain node imple
    whatisfullbalance
    syncandruntestnet
    createchildchain
+   nonarchive
