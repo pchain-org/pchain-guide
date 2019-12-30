@@ -102,6 +102,28 @@ You can cancel delegation before the current Epoch reaches 75%.
 | You can cancel with total delegation amount. Also, you can define the amount that you want to decrease but ensure the delegate balance to this address is equal or greater than 1,000 PI.
 
 
+=================================================
+How to extract mining rewards from rewardBalance
+=================================================
+
+Noted:
+
+- After PCHAIN mainnet upgraded to V1.2.0, the mining reward need to be extracted by users ( Validators/ delegators) instead of being released automatically.
+- After each epoch ends, you can extract the 1/12 mining reward at anytime. 
+- You can’t define the extract amount. The amount is the total reward on one chain you can extract at that moment. 
+
+1. Go to PIwallet “Delegate”.
+Please ensure the address that you want to extract  reward to. And then click “Extract Reward”.
+
+.. image:: ../_static/wallet/extract1.png
 
 
+2. Select the chain that you get the reward from.
+
+.. image:: ../_static/wallet/extract2.png
+
+
+3. Enter the password. 
+
+.. image:: ../_static/wallet/extract3.png
 
