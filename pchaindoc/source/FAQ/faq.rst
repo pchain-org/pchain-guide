@@ -18,6 +18,7 @@ FAQ
    tokenswap
    piwallet
    crosschaintx
+   developer
    .. canceldelegation
    .. node
    .. tokenswap

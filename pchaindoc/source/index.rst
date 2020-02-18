@@ -18,6 +18,15 @@ Welcome to PCHAIN Documentation!
    developer/overview
    wallet/GettingStart
    PMetamask/pmetamask
+   
+
+   zh/introduction/introduction_zh
+   zh/pchainclient/pchainclient_zh
+   zh/PMetamask/pmetamask_zh
+   zh/wallet/GettingStart_zh
+   zh/developer/overview_zh
+
    FAQ/faq
    FAQ_zh/faq_zh
+
 
