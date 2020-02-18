@@ -13,19 +13,20 @@ Pchain JSON RPC API
 JavaScript API
 ---------------
 
-To talk to an pchain node from inside a JavaScript application use the `pweb3 <https://github.com/pchain-org/pweb3>`_ library, which gives a convenient interface for the RPC methods. See the `JavaScript API <https://github.com/pchain-org/pweb3/wiki/JavaScript-API>`_ for more.
+要从JavaScript应用程序内部与pchain节点通信，可以使用`pweb3 < https://github.com/pchorg/pweb3>`_ library，它为RPC方法提供了一个方便的接口。有关更多信息，请参见 `JavaScript API < https://github.com/pchorg/pweb3/wiki/javascript-api >`_。
+
 
 ---------------
 Java API
 ---------------
 
-To talk to an pchain node from inside a Java application use the `pweb3j <https://github.com/pchain-org/pweb3j>`_ library.
+要从Java应用程序内部与pchain节点通信，可以使用 `pweb3j <https://github.com/pchain-org/pweb3j>`_ library.
 
 ---------------
 JSON RPC URL
 ---------------
 
-Default JSON RPC URL
+默认JSON RPC URL
 
 +--------------+---------------+------------------------------------+
 | Chain Name   | Chain Id      | Default Datadir Directory          | 
@@ -38,21 +39,21 @@ Default JSON RPC URL
 +--------------+---------------+------------------------------------+
 
 ------------------
-How To Open RPC 
+如何开启RPC连接 
 ------------------
 
-You can start pchain with flag --rpc
+你可以在启动命令行中加上 --rpc 来开启RPC连接
 ::
 	pchain --rpc
-After this, if you wanna check main chain's current block number, the command will look like this:
+假如你想查看主链现在的高度，可以使用这样的命令:
 ::	
 	curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}' localhost:6969/pchain
-Or if you wanna check child chain's current block number, the command will look like this:
+假如你想查看子链现在的高度，可以使用这样的命令::
 ::	
 	curl -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}' localhost:6969/child_0
-You can also send request by `Postman <https://www.getpostman.com/>`_, you will need to start pchain with flag "--rpc --rpcaddr=0.0.0.0". But remember open your rpc to remote hosts is very dangerous if you keep your account unlocking.  
+你也可以用`Postman <https://www.getpostman.com/>`_ 发送请求, 但你需要先将 "--rpc --rpcaddr=0.0.0.0" 加入到启动的命令中。 
 
-You can check our api list from `here <https://github.com/pchain-org/pchain/wiki/JSON-RPC>`_.
+你可以在github上查看我们的RPC接口列表 `RPC List <https://github.com/pchain-org/pchain/wiki/JSON-RPC>`_.
 
 
 
