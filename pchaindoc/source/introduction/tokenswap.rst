@@ -4,12 +4,25 @@
 Token Swap
 ==========
 
-Reminders before you start token swap on PIwallet.
+There are two methods to complete the token swap: Exchange Swap and PIwallet Swap
 
-1. Update PCHAIN Wallet to the latest version. Click `here <https://github.com/pchain-org/wallet/releases>`_ to download PIwallet.
-2. Ensure that you keep the private key or keystore file of the ERC20 PI address well.
+Currently, 3 exchanges (Coinsuper, Gate.io, Bithumb ) support native PI, the other exchanges（e.g. Bibox, Bittrex Global,Upbit, etc）still support the ERC 20 PI. Thus, if your ERC 20 PI tokens are in the exchange, then you need to withdraw all the ERC 20 PI first.
+
+If your ERC 20 PI tokens are in the ERC 20 wallet, e.g. MEW, Imtoken or cold wallet, please make sure that you keep its private key and/or keystore file well before token swap via PIwallet. If not, then you have to transfer the ERC 20 PI tokens to new ERC 20 address which can be created on PIwallet. [Create account on PIwallet]
+
+- Exchange Swap
+Bithumb supports the PCHAIN swap. You can deposit ERC 20 PI to Bithumb account and they will be swapped automatically.
+Details: https://support.bithumb.pro/hc/en-us/articles/360033820673-Bithumb-Global-PI-Listing-Jul-31-2019
+
+- PIwallet Swap
+PIwallet only support native PI, and the address created on PIwallet is compatible with ERC 20 address. 
+
+Please read the reminders before you start PIwallet swap.
+
+1. Update PCHAIN Wallet to the latest version. Click here to download PIwallet.
+2. Ensure that you keep the private key and/or keystore file of the ERC20 PI address well. 
 3. Ensure there is a minimum amount of ETH (recommend 0.00036 ether which is 6 gwei*60,000) in your ERC20 PI address to cover the gas fee.
-4. After you send the swap transaction, you will receive your native PI within **2 business days** at most.
+4. After you send the swap transaction, you will receive your native PI within 2 business days at most.
 5. The swap need to get 12 blocks confirmation in Ethereum so the swap may take dozens of minutes.
 
 Step 1: Open the PIwallet and click ‘Token Swap’ tab.
