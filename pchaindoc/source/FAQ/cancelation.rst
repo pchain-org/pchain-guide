@@ -15,8 +15,8 @@ How to cancel candidate?
 -------------------------------------------------------------
 How to cancel node to unlock the staking amount?
 -------------------------------------------------------------
-After epoch reaches 75% height, you need to participate in the voting and revealing vote and set the staking amount to 0. 
-For more information please refers to :ref:`Wallet Validator<How to become validator by PIWallet>` and :ref:`Client Validator<How to become validator by RPC>`
+After epoch reaches 75% height, you need to participate in the voting and revealing vote and set the staking amount to 0. Remember first make sure your node is synced to the latest height.
+For more information please refers to :ref:`How to become validator by PIWallet<Wallet Validator>` and :ref:`How to become validator by RPC<Client Validator>`
 Once cancellation succeed, the staking amount will be unlocked to your balance when the current epoch ends.
 
 -------------------------------------------------------------

@@ -2,6 +2,17 @@
 FAQ（常见问题）
 ==============
 
+------------------------------------------------
+如何退出validator？
+------------------------------------------------
+确保你的节点已经同步到最新的块。退出validtaor的操作与加入validator的操作一致，当epoch进入到75%-85%时，投出amount为0的暗标，当epoch进入到85%-95%时，投出相应的明标。你的抵押金额将会在当前epoch结束后返还。
+详情请参考 https://pchaindoc.readthedocs.io/en/latest/zh/pchainclient/howtobecomevalidator_zh.html 和 https://pchaindoc.readthedocs.io/en/latest/zh/wallet/localnode/Epoch_zh.html
+
+-------------------------------------------------------------
+如何取消委托 ?
+-------------------------------------------------------------
+Epoch进入75%之前，你都可以通过钱包取消委托。 Guidance: :ref:`How to cancel delegation<canceldelegation>`
+
 -------------------------------------------------------------
 如果我将PI抵押在了pchain上，我将获得多少收益？
 -------------------------------------------------------------
