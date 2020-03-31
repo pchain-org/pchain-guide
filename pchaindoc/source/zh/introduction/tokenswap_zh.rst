@@ -6,7 +6,7 @@ Token Swap
 
 PCHAIN主网PI的映射，可通过官方PIWallet 和交易所这两种方式完成。
 
-目前，支持PCHAIN主网PI的交易所有Coinsuper, Gate.io 以及Bithumb，其他交易所如Bibox、Bittrex Global、Upbit等都支持ERC 20 PI，因此，若您的ERC 20 PI在以上交易所，则您首先需提币。
+目前，支持PCHAIN主网PI的交易所有Coinsuper, Gate.io ,Upbit以及Bithumb，其他交易所如Bibox、Bittrex Global等都支持ERC 20 PI，因此，若您的ERC 20 PI在以上交易所，则您首先需提币。
 
 若您的ERC 20 PI在ERC20钱包中，如MEW、Imtoken或者冷钱包，在使用PIWallet进行映射前，请确认您是否持有该地址的私钥或者keystore文件。若没有，则需要将该地址中的ERC20 PI转移至一个新的ERC20 地址，您可以通过PIWallet 来创建ERC20 地址。（创建ERC 20 地址）
 
