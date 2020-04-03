@@ -133,4 +133,46 @@ Epoch进入75%之前，你都可以通过钱包取消委托。 Guidance: :ref:`H
  
 
 
- 
+-------------------------------------------------------------
+如何重新同步pchain？
+-------------------------------------------------------------
+如果你遇到了badblock的问题, 你需要重新同步块.
+
+首先把除了priv_validator.json和nodekey之外的文件都删掉,删除之后你的datadir应该是这样的结构:
+::
+	datadir/
+        -nodekey
+        -pchain/
+                -priv_validator.json  
+                -keystore/
+如果你同时还在跑子链，你的datadir应该时这样的结构:
+::
+	datadir/
+        -nodekey
+        -pchain/
+                -priv_validator.json  
+                -keystore/
+        -child_0/
+        		-priv_validator.json
+        		-genesis.json
+        		-eth_genesis.json
+        		-keystore/
+确保你的目录结构如上所示以后，可以开始重新同步，如果你跑了子链，记得先初始化:
+::
+	cd ~/pchain
+	./bin/pchain --datadir=~/pchain/.pchain init ~/pchain/.pchain/child_0/eth_genesis.json child_0
+	./run.sh
+如果你只跑了主链，直接运行run.sh即可
+::
+	cd ~/pchain
+	./run.sh
+
+-------------------------------------------------------------
+如果总是遇到bad block的问题该怎么办？
+-------------------------------------------------------------
+我们建议你从我们的bootnode同步数据, 以下是我们bootnode的ip:
+::
+	13.53.189.137
+	13.234.151.146
+	35.165.181.32
+请只把你的30308端口开放给这三个ip, 等到同步至最新高度时, 再重新开放30308端口给其他所有ip。

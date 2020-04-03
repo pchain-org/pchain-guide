@@ -107,3 +107,48 @@ First, check if you are running the latest version, you can find the latest veri
 -------------------------------------------------------------
 You need stake at least 100K PI to run on PCHAIN. 
 If you want to run a node through others’ delegation, then you need 10K PI to apply for the Candidate first.
+
+
+-------------------------------------------------------------
+13. How to resync pchain?
+-------------------------------------------------------------
+If you run into bad block issue, you should re-sync pchain from block 0.
+
+First, delete the data except your priv_validator.json and nodekey, after delete, your datadir should look like this:
+::
+	datadir/
+        -nodekey
+        -pchain/
+                -priv_validator.json  
+                -keystore/
+If you are running child chain, your datadir should look like this:
+::
+	datadir/
+        -nodekey
+        -pchain/
+                -priv_validator.json  
+                -keystore/
+        -child_0/
+        		-priv_validator.json
+        		-genesis.json
+        		-eth_genesis.json
+        		-keystore/
+Make sure your datadir is excactly like above. Now you can re-sync blocks, if you are running child_0, remember init child chain first:
+::
+	cd ~/pchain
+	./bin/pchain --datadir=~/pchain/.pchain init ~/pchain/.pchain/child_0/eth_genesis.json child_0
+	./run.sh
+If you run main chain only, just run
+::
+	cd ~/pchain
+	./run.sh
+
+-------------------------------------------------------------
+14. What should I do if I got bad block very often?
+-------------------------------------------------------------
+We recommend you re-sync from our bootnodes, here are the ips of bootnodes:
+::
+	13.53.189.137
+	13.234.151.146
+	35.165.181.32
+open your port 30308 only to these 3 ips, after synced to the latest height, you can open port 30308 to other ips.
