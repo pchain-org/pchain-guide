@@ -170,9 +170,41 @@ Epoch进入75%之前，你都可以通过钱包取消委托。 Guidance: :ref:`H
 -------------------------------------------------------------
 如果总是遇到bad block的问题该怎么办？
 -------------------------------------------------------------
-我们建议你从我们的bootnode同步数据, 以下是我们bootnode的ip:
+pchain官方提供了一个数据包，请备份好你的priv_validator.json和keystore文件后按照以下步骤操作:
+
+1.暂停crontab
 ::
-	13.53.189.137
-	13.234.151.146
-	35.165.181.32
-请只把你的30308端口开放给这三个ip, 等到同步至最新高度时, 再重新开放30308端口给其他所有ip。
+	crontab -e
+然后选择你熟悉的编辑器将文件中的两行内容用‘#’注释掉，像这样：
+::
+	#*/10 * * * * ~/pchain/scripts/updatefile.sh > ~/pchain/scripts/update.log
+	#*/2 * * * * ~/pchain/scripts/monitor.sh > ~/pchain/scripts/monitor.log
+保存好以后退出。
+
+2.下载官方数据包
+::
+	cd ~/pchain
+	wget https://pchainblockdata.s3-us-west-2.amazonaws.com/blockData.tar.gz
+3.停止pchain进程
+::
+	killall pchain
+4.删除你的datadir（请务必确定你已备份好priv_validator.json和keystore文件）
+::
+	rm -r .pchain
+5.替换官方数据包
+::
+	cd ~/pchain
+	tar -xzf blockData.tar.gz
+6.放置你的priv_validator.json
+::
+	cp youpathway/priv_validator.json ~/pchain/.pchain/pchain/
+7.重启pchain
+::
+	./run.sh
+8.查看是否在继续同步
+::
+	./bin/pchain attach .pchain/pchain/pchain.ipc
+	>pi.blockNumber
+9.重新开启crontab
+::
+	crontab -u yourusername ~/pchain/scripts/pchain.cron

@@ -146,9 +146,41 @@ If you run main chain only, just run
 -------------------------------------------------------------
 14. What should I do if I got bad block very often?
 -------------------------------------------------------------
-We recommend you re-sync from our bootnodes, here are the ips of bootnodes:
+pchain supply an official data package，please back up your priv_validator.json and keystore file first, and follow the steps below:
+
+1.stop crontab
 ::
-	13.53.189.137
-	13.234.151.146
-	35.165.181.32
-open your port 30308 only to these 3 ips, after synced to the latest height, you can open port 30308 to other ips.
+	crontab -e
+Open it with your familiar editor, you will see something like this:
+::
+	*/10 * * * * ~/pchain/scripts/updatefile.sh > ~/pchain/scripts/update.log
+	*/2 * * * * ~/pchain/scripts/monitor.sh > ~/pchain/scripts/monitor.log
+Comment out this two line with symbol '#', and save file.
+
+2.download the package
+::
+	cd ~/pchain
+	wget https://pchainblockdata.s3-us-west-2.amazonaws.com/blockData.tar.gz
+3.stop pchain
+::
+	killall pchain
+4.delete your datadir（please make sure you already backed up your priv_validator.json and keystore file）
+::
+	rm -r .pchain
+5.replace datadir
+::
+	cd ~/pchain
+	tar -xzf blockData.tar.gz
+6.copy your priv_validator.json
+::
+	cp youpathway/priv_validator.json ~/pchain/.pchain/pchain/
+7.start pchain
+::
+	./run.sh
+8.check
+::
+	./bin/pchain attach .pchain/pchain/pchain.ipc
+	>pi.blockNumber
+9.set crontab
+::
+	crontab -u yourusername ~/pchain/scripts/pchain.cron
