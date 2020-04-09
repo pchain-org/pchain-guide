@@ -105,16 +105,16 @@ First, check if you are running the latest version, you can find the latest veri
 -------------------------------------------------------------
 12. How many tokens to run on PCHAIN?
 -------------------------------------------------------------
-You need stake at least 100K PI to run on PCHAIN. 
+You need stake at least 100K PI to run alone on PCHAIN. 
 If you want to run a node through others’ delegation, then you need 10K PI to apply for the Candidate first.
 
 
 -------------------------------------------------------------
-13. How to resync pchain?
+13. How to resync pchain from block 0 ?
 -------------------------------------------------------------
-If you run into bad block issue, you should re-sync pchain from block 0.
+If you run into bad block issue then you should look the next question, here is how to re-sync pchain from block 0.
 
-First, delete the data except your priv_validator.json and nodekey, after delete, your datadir should look like this:
+First, stop crontab and stop pchain as explained in steps 1 and 3 of question below, then delete the data except your priv_validator.json and nodekey, after delete, your datadir should look like this:
 ::
 	datadir/
         -nodekey
