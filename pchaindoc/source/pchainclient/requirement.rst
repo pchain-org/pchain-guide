@@ -33,13 +33,13 @@ According to the current cost of AWS, the total cost is estimated to be around $
 
 4. Operating System
 
-Recommend Ubuntu 16.04
+Recommend Ubuntu 18.04
 
 ----------------
 Open Port 30308
 ----------------
 
-Ensure that you have open 30308 port tdp&upd on your server firewall so pchain's other peers can connect to your node. Here is the example of AWS.
+Ensure that you have open 30308 port for both TCP and UDP on your server firewall so pchain's other peers can connect to your node. Here is the example of AWS.
 
 .. image:: ../_static/30308.jpg
 
