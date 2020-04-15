@@ -6,7 +6,7 @@ Token Swap
 
 There are two methods to complete the token swap: Exchange Swap and PIwallet Swap
 
-Currently, 4 exchanges (Coinsuper, Gate.io, Bithumb, Upbit) support native PI, the other exchanges（e.g. Bibox, Bittrex Global, etc）still support the ERC 20 PI. Thus, if your ERC 20 PI tokens are in the exchange, then you need to withdraw all the ERC 20 PI first.
+Currently, 4 exchanges (Bibox, Gate.io, Bithumb, Upbit) support native PI, the other exchange（Bittrex Global）still support the ERC 20 PI. Thus, if your ERC 20 PI tokens are in the exchange, then you need to withdraw all the ERC 20 PI first.
 
 If your ERC 20 PI tokens are in the ERC 20 wallet, e.g. MEW, Imtoken or cold wallet, please make sure that you keep its private key and/or keystore file well before token swap via PIwallet. If not, then you have to transfer the ERC 20 PI tokens to new ERC 20 address which can be created on PIwallet. (:ref:`Create account on PIwallet<Create or import account>`)
 
