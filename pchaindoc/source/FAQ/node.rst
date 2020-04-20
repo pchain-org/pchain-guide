@@ -160,9 +160,14 @@ Open it with your familiar editor, you will see something like this:
 Comment out this two line with symbol '#', and save file.
 
 2.download the package
+If you are running mainchain only please run:
 ::
 	cd ~/pchain
 	wget https://pchainblockdata.s3-us-west-2.amazonaws.com/blockData.tar.gz
+If you are running main chain and child chain please run:
+::
+	cd ~/pchain
+	wget https://pchainblockdata.s3-us-west-2.amazonaws.com/blockDataWithChild.tar.gz
 3.stop pchain
 ::
 	killall pchain
@@ -170,12 +175,22 @@ Comment out this two line with symbol '#', and save file.
 ::
 	rm -r .pchain
 5.replace datadir
+If you are running mainchain only please run:
 ::
 	cd ~/pchain
 	tar -xzf blockData.tar.gz
+If you are running main chain and child chain please run:
+::
+	cd ~/pchain
+	tar -xzf blockDataWithChild.tar.gz
 6.copy your priv_validator.json
+If you are running mainchain only please run:
 ::
 	cp youpathway/priv_validator.json ~/pchain/.pchain/pchain/
+If you are running main chain and child chain please run:
+::
+	cp youpathway/priv_validator.json ~/pchain/.pchain/pchain/
+	cp youpathway/priv_validator.json ~/pchain/.pchain/child_0/
 7.start pchain
 ::
 	./run.sh
