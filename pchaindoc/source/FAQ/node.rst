@@ -160,6 +160,7 @@ Open it with your familiar editor, you will see something like this:
 Comment out this two line with symbol '#', and save file.
 
 2.download the package
+
 If you are running mainchain only please run:
 ::
 	cd ~/pchain
@@ -175,6 +176,7 @@ If you are running main chain and child chain please run:
 ::
 	rm -r .pchain
 5.replace datadir
+
 If you are running mainchain only please run:
 ::
 	cd ~/pchain
@@ -184,6 +186,7 @@ If you are running main chain and child chain please run:
 	cd ~/pchain
 	tar -xzf blockDataWithChild.tar.gz
 6.copy your priv_validator.json
+
 If you are running mainchain only please run:
 ::
 	cp youpathway/priv_validator.json ~/pchain/.pchain/pchain/
