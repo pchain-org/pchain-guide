@@ -182,9 +182,14 @@ pchain官方提供了一个数据包，请备份好你的priv_validator.json和k
 保存好以后退出。
 
 2.下载官方数据包
+如果你只跑了主链：
 ::
 	cd ~/pchain
 	wget https://pchainblockdata.s3-us-west-2.amazonaws.com/blockData.tar.gz
+如果你跑了主链和子链：
+::
+	cd ~/pchain
+	wget https://pchainblockdata.s3-us-west-2.amazonaws.com/blockDataWithChild.tar.gz
 3.停止pchain进程
 ::
 	killall pchain
@@ -192,12 +197,22 @@ pchain官方提供了一个数据包，请备份好你的priv_validator.json和k
 ::
 	rm -r .pchain
 5.替换官方数据包
+如果你只跑了主链：
 ::
 	cd ~/pchain
 	tar -xzf blockData.tar.gz
+如果你跑了主链和子链：
+::
+	cd ~/pchain
+	tar -xzf blockDataWithChild.tar.gz
 6.放置你的priv_validator.json
+如果你只跑了主链：
 ::
 	cp youpathway/priv_validator.json ~/pchain/.pchain/pchain/
+如果你跑了主链和子链：
+::
+	cp youpathway/priv_validator.json ~/pchain/.pchain/pchain/
+	cp youpathway/priv_validator.json ~/pchain/.pchain/child_0/
 7.重启pchain
 ::
 	./run.sh
