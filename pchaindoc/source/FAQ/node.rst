@@ -172,9 +172,9 @@ If you are running main chain and child chain please run:
 3.stop pchain
 ::
 	killall pchain
-4.delete your datadir（please make sure you already backed up your priv_validator.json and keystore file）
+4.delete your datadir and monitoring files（please make sure you already backed up your priv_validator.json and keystore file）
 ::
-	rm -r .pchain
+	rm -r .pchain stuck_times epoch
 5.replace datadir
 
 If you are running mainchain only please run:
