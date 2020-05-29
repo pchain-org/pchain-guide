@@ -5,7 +5,7 @@ Staking
 ========
 
 | Welcome to PCHAIN staking.
-PCHAIN is the 1st native EVM multichain enables the interoperability of child chain and main chain. Making large scale blockchain application possible.
+PCHAIN is the 1st native EVM multichain enables the interoperability of child chain and main chain. Making large scale blockchain application possible..
 We welcome more PCHAIN community members to run on PCHAIN and jointly make the mainnet stable with PCHAIN innovative PDBFT consensus algorithm, which can greatly reduce communication cost from N^2 to N comparing with traditional BFT algorithm and effectively reduce the centralization problem as the number of nodes is limited. Meanwhile, PCHAIN adopts Dynamic Bidding including voting and revealing vote and it enables the validator election more fair and secure in epoch switch. For the non-technicals, you can delegate PI via Safe Delegation, effectively avoiding the risk of evil by candidates. 
 PCHAIN wallet has been released. It will help you participate in Validator competition more easier and quickly. Meanwhile, PCHAIN staking mechanism is the same on main chain and child chain.
 
