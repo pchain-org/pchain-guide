@@ -17,11 +17,11 @@ Who can get POS mining reward
 
 Before you staking on PCHAIN, please confirm which way you would like to take to participate in PoS Mining. 
 
-- Bidder
+- Candidate node without delegations
 PCHAIN holders with a minimum of 100K+ PI and the required configuration set-up are directly eligible to vote for validator. Dynamic staking ranking at each voting round will then determine if selected to be a next Epoch Validator.
 
-- Candidate
-If PCHAIN holders want to get the supports from delegation, they should be with a minimum of 10k PI and the required configuration set-up, and should apply for candidate first. Then they can compete against bidders for the validator via voting. Dynamic staking ranking at each voting round will then determine if selected to be a next Epoch Validator.
+- Candidate node with delegations
+If PCHAIN holders want to get the supports from delegation, they should be with a minimum of 10k PI and the required configuration set-up, and should apply for candidate first. Then they can compete against those nodes without delegations for the validator via voting. Dynamic staking ranking at each voting round will then determine if selected to be a next Epoch Validator.
 
 - Delegator 
 PCHAIN holders with a minimum of 1K PI can delegate PI to candidate(s). Once his candidate succeed in voting for validator, he will get his PoS Mining reward based on his delegation percentage.
@@ -44,15 +44,15 @@ First, we will introduce how to delegate to other candidates, since this is the 
 - :ref:`Install PIWallet<PIWallet>`
 - :ref:`Create or import account to PIWallet<Create or import account>`
 - Have at least 1k PI on your address
-- :ref:`Go to delegate <How to delegate>` (You can delegate on both chain or one chain)
+- :ref:`Go to delegate <How to delegate>` (You can delegate on both chains or one chain)
 
-Once your candidate succeed in voting for validator, then you will get PoS Mining reward during next Epoch.
+Once your candidate node succeed in voting for validator node, then you will get PoS Mining reward during next Epoch.
 
---------------------
-Bidding
---------------------
+-----------
+Staking
+-----------
 
-Before we introduce how to bid, you must know that become a validator is a very interesting but complex thing. If you do not have any technical background or are new to blockchain, we recommend you to delegate to other candidate(s). Since once you become validator, you have to spend some time to monitor your node and even send your node's log to our team sometimes. But if you are determined to become pchain's validator, we will help you as much as we can.
+Before we introduce how to stake on PCHAIN as a Validator Node, you must know that being a validator node is a very interesting but complex thing. If you do not have any technical background or are new to blockchain, we recommend you to delegate to other candidate(s). Since once you become validator node, you have to spend some time to monitor your node and even send your node's log to our team sometimes. But if you are determined to become pchain's validator, we will help you as much as we can.
 
 You must have done things below before bidding on any chains:
 
@@ -71,24 +71,24 @@ Stake on child chain or both chains:
 
 Now you have 2 options to stake:
 
-- Become validator as bidder
-- Become validator as candidate
+- Become validator Node as Candidate node without delegations
+- Become validator Node as Candidate node with delegations
 
-The advantage to apply candidate is you can earn the commission fee from delegators and the delegators' staking will make you more competitive, but once you got delegators, you have the responsibility to keep your node healthy cause the delegators will take attention to their reward.
+The advantage to apply candidate node with delegations is you can earn the commission fee from delegators and the delegators' staking will make you more competitive, but once you got delegations, you have the responsibility to keep your node healthy cause the delegators will take attention to their reward.
 
-So we will first introduce how to apply candidates, you can skip this section if you don't wanna apply one.
+So we will first introduce how to apply candidate nodes with delegations, you can skip this section if you don't wanna apply one.
 
 >>>>>>>>>>>>>>>>>>>>>>
-How to apply candidate
+How to apply candidate node with delegations
 >>>>>>>>>>>>>>>>>>>>>>
 
-After you installed and synced pchain mainnet, you should also have at least 10k PI on your account. We provide 2 ways to apply candidate:
+After you installed and synced pchain mainnet, you should also have at least 10k PI on your account. We provide 2 ways to apply candidate node with delegations:
 
 - :ref:`Apply candidate by PIWallet<Wallet Candidate>`
 - :ref:`Apply candidate by RPC<Client Candidate>`
 
 | **Notice:**
-| You can do this on both chain, the RPC URL on main chain and child chain is different:
+| You can do this on both chain, but the RPC URL on main chain and child chain is different:
 | Main chain: 	http://yourip:6969/pchain
 | Child chain:	http://yourip:6969/child_0
 
@@ -96,7 +96,7 @@ After you installed and synced pchain mainnet, you should also have at least 10k
 How to become validator
 >>>>>>>>>>>>>>>>>>>>>>>
 
-After you installed and synced pchain mainnet, you should also have at least 100k PI on your account. We provide 2 ways to bid for validator:
+After you installed and synced pchain mainnet, you should also have at least 100k PI on your account. We provide 2 ways to bid for validator node:
 
 - :ref:`Bid for validator by PIWallet<Wallet Validator>`
 - :ref:`Bid for validator by RPC<Client Validator>`
@@ -112,7 +112,7 @@ After you installed and synced pchain mainnet, you should also have at least 100
 Cancel delegation
 -----------------
 
-Once you delegate successfully, you can cancel it before the Epoch reaches 75%. We provide 2 ways to delegation:
+Once you delegate successfully, you can cancel it before the Epoch reaches 75%. We provide 2 ways:
 
 - :ref:`Cancel delegation by PIWallet<Wallet Cancel Delegation>`
 - :ref:`Cancel delegation by RPC<Client Cancel Delegation>`
@@ -123,11 +123,11 @@ Once you delegate successfully, you can cancel it before the Epoch reaches 75%. 
 
 .. _cancelcandidate:
 
-------------------
-Cancel candidate
-------------------
+---------------------------
+Cancel candidate submission
+---------------------------
 
-Once you apply candidate successfully, you can cancel it before the Epoch reaches 75%. We provide 2 ways to cancel candidate:
+Once you apply candidate node with delegation successfully, you can cancel it before the Epoch reaches 75%. We provide 2 ways to cancel candidate:
 
 - :ref:`Cancel candidate by PIWallet<Wallet Cancel Candidate>`
 - :ref:`Cancel candidate by RPC<Client Cancel Candidate>`

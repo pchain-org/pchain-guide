@@ -1,4 +1,4 @@
-.. _Sync main chain:
+.. _Sync main chain zh:
 
 ====================
 同步并运行主链
