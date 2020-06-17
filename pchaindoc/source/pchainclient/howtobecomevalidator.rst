@@ -107,7 +107,7 @@ Now you can receal vote by `RPC tdm_revealvote <https://github.com/pchain-org/pc
 In this case, the command should be:
 ::
 	curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"tdm_revealVote","params":["0x4CACBCBF218679DCC9574A90A2061BCA4A8D8B6C", "085586D41F70435700850E19B7DE54B3E793C5EC4C6EC502D19030EF4F2122823E5A765E56CBA7B4C57E50561F77B022313C39895CA303F3C95D7B7282412F334778B95ACE046A79AEA4DB148334527250C8895AC5DB80459BF5D367236B59AF2DB5C0254E30A6D8CD1FA10AB8A5D872F5EBD312D3160D3E4DD496973BDC75E0", "0x152d02c7e14af7000000", "ilovepchain", "0x1214608bcdf2e464b2d37d19b1b671482253e275d33079264045253fbb18689385ac0d5b4128d0c593211588deafd9ea2507b4858bdd42aaef3999045c0407ae"],"id":1}' localhost:6969/pchain
-Remember the return hash to check if this reveal vote transaction succeedand, and then wait for pchain enter the last phase.
+Remember the return hash to check if this reveal vote transaction succeed, and then wait for pchain enter the last phase.
 
 >>>>>>
 Check
