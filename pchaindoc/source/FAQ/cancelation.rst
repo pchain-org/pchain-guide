@@ -5,18 +5,18 @@ Cancel node/ Candidate / delegation
 -------------------------------------------------------------
 As a candidate, can I update the commission fee?
 -------------------------------------------------------------
-Candidate can update commission fee via cancel candidate first and then reapply for it with the new commission fee. But once you cancel, all the delegation will return to delegators’ balance.
+You need to cancel candidate first and then reapply candidate node (Noted that once you cancel，the delegation amount you received will return to delegators). After reapply, you can check on PIWallet if you are on the candidate list. If not, just wait for couple hours for PIWallet to refresh the commission fee.
 
 -------------------------------------------------------------
-How to cancel candidate?
+How to cancel candidate submission?
 -------------------------------------------------------------
 :ref:`How to cancel candidate<cancelcandidate>`
  
 -------------------------------------------------------------
-How to cancel node to unlock the staking amount?
+How to cancel Validator node to unlock the staking amount?
 -------------------------------------------------------------
-After epoch reaches 75% height, you need to participate in the voting and revealing vote and set the staking amount to 0. Remember first make sure your node is synced to the latest height.
-For more information please refers to :ref:`How to become validator by PIWallet<Wallet Validator>` and :ref:`How to become validator by RPC<Client Validator>`
+After epoch reaches 75% height, you need to participate in the voting and revealing vote and set the staking amount to 0. Remember first make sure your node synced to the latest height.
+The voting and revealing vote process please refer to :ref:`How to become validator by PIWallet<Wallet Validator>` and :ref:`How to become validator by RPC<Client Validator>`
 Once cancellation succeed, the staking amount will be unlocked to your balance when the current epoch ends.
 
 -------------------------------------------------------------
@@ -31,13 +31,13 @@ If not, then the delegated amount will be unlocked to your balance immediately.
 Error: cancel amount greater than your Proxied Balance
 -------------------------------------------------------------
 
-This error occured because you are cancel more PI than you deposit. Please copy your candidate's address and go to `PIScan <https://piscan.pchain.org/fullBalance.html>`_ to check your candidate's fullbalance. Find your address in your candidate's Proxied detail, there are 3 value which we supposed is 
+This error occured because the PI amount you are cancelling is greater than you delegated. Please copy your candidate's address and go to `PIScan <https://piscan.pchain.org/fullBalance.html>`_ to check your candidate's fullbalance. Find your address in your candidate's Proxied detail, there are 3 value which we supposed is 
 ::
 	ProxiedBalance 	A PI
 	DepositProxiedBalance 	B PI
 	PendingRefundBalance 	C PI
 
-The amount you cancel should lower or equal than A+B-C.
+The amount you cancel should be lower or equal than A+B-C.
 
 -------------------------------------------------------------
 Error:delegation amount must be greater or equal to 1000PI
@@ -49,4 +49,4 @@ This error occured because you are cancel invalid amount.Please copy your candid
 	DepositProxiedBalance 	B PI
 	PendingRefundBalance 	C PI
 
-If you don't wanna cancel all your deposit, the amount you cancel should be lower or equal than A+B-C-1000. If you wanna cancel all your deposit, the amount you cancel must be equal to A+B-C.
+If you don't wanna cancel all your delegation, the amount you cancel should be lower or equal than A+B-C-1000. If you wanna cancel all your delegation, the amount you cancel must be equal to A+B-C.

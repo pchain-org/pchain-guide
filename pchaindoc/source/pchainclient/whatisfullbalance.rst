@@ -99,20 +99,20 @@ Detail of FullBalance
 (natural unit: wei, 1 PI = 1,000,000,000,000,000,000 or 10^18 natural units)
 
 1.	balance
-This balance also call free balance, means you can do anything on PCHAIN with this balance, (transfer, delegate, vote), your transaction Gas Fee (gas price * used gas) will be deduct from this balance
+This balance also call free balance, means you can do anything on PCHAIN with this balance (transfer, delegate, vote), your transaction Gas Fee (gas price * used gas) will be deduct from this balance
 	
 2.	total_delegateBalance
-The total delegate balance amount. If you send delegate transaction to other address, the delegate amount will be moved from balance field to this delegate balance. If you delegate to multiple address, this field will sum the total delegation amount, you won’t able to see the detail of delegation on blockchain level, (for save storage reason, keep the on-chain data as minimum as possible), for detail delegate balance, you may need wallet or 3rd party dapp.
+The total delegate balance amount. If you send delegate transaction to other address, the delegate amount will be moved from balance field to this delegate balance. If you delegate to multiple addresses, this field will sum the total delegation amount, you won’t able to see the detail of delegation on blockchain level, (for save storage reason, keep the on-chain data as minimum as possible), for detail delegate balance, you may need wallet or 3rd party dapp.
 
 3.	total_depositBalance
-The total staking balance amount, from you own address. If you want to become a validator, after you sending the hash/reveal vote, your staking amount will be locked from balance field to this deposit balance.
+The total staking balance amount, from your own address. If you want to become a validator, after you sending the hash/reveal vote, your staking amount will be locked from balance field to this deposit balance.
 	
 4.	total_proxiedBalance
-The total balance that other address delegate their balance amount to your address. The balance takes no effect until you vote become a validator, it will move to the deposit proxied balance. Before that, the other address also able to revoke their delegation.
+The total balance that other addresses delegate their balance amount to your address. The balance takes no effect until you vote become a validator, it will move to the deposit proxied balance. Before that, the other address also able to revoke their delegation.
 For detail of each proxied balance, see proxied_detail field
 
 5.	total_depositProxiedBalance
-The total balance that other address delegate their balance amount to your address and become the part of total staking. Other address can not revoke their delegation until epoch reach its end.
+The total balance that other addresses delegate their balance amount to your address and become the part of total staking. Other addresses can not revoke their delegation until epoch reach its end.
 For detail of each deposit proxied balance, see proxied_detail field
 
 6.	total_pendingRefundBalance
@@ -120,12 +120,12 @@ The total balance that other address delegate their balance amount to your addre
 For detail of each pending refund balance, see proxied_detail field
 
 7.	total_rewardBalance
-The total balance that will reward to address in the future, after each epoch reach its end, the reward balance of epoch will move to your balance field for free to use.
+The total balance that will reward to address in the future, after each epoch reaches its end, the reward balance of epoch will move to your balance field for free to use.
 Every time when the address produces a new Block, this address will be considered as the recipient of the reward. Below is how the reward being calculated
 
 | For Main Chain:
 20% of block reward goes to Child Chain Foundation Address 0x991cf3cee2a55d06f9c7ba511bee3fad45a1bda7
-80% of block reward belongs to the miner. If the block miner has delegation from other address, deduct the commission fee first if any, then the remaining rewards will be distributed by proportion.
+80% of block reward belongs to the miners. If the block miner has delegation from other address, deduct the commission fee first if any, then the remaining rewards will be distributed by proportion.
 
 | For Child Chain:
 The Block Reward, setup by Child Chain Owner, belongs to the miner. If the reward pool (address 0x000000000000000000000000000000000000064) doesn’t has sufficient balance, then no reward to miner.

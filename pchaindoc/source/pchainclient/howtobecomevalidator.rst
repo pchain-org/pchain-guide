@@ -1,8 +1,8 @@
 .. _Client Validator:
 
-=======================
-How to Become Validator
-=======================
+============================
+How to Become Validator node
+============================
 
 Before you vote to become validator, make sure you have done things below: 
 
@@ -10,7 +10,7 @@ Before you vote to become validator, make sure you have done things below:
 - have an address and consensus keys
 - have at least 100k PI on your address
 
-You can choose to apply candidates first so you can let other delegate to you. This is an option, not necessity.
+You can choose to apply candidate node with delegations first so you can let other users to delegate PI to you. This is an option, not necessity.
 
 Pchain have 12 epochs per year, and in each epoch there are 4 phases.
 
@@ -28,12 +28,12 @@ Pchain have 12 epochs per year, and in each epoch there are 4 phases.
 
 You can check the current stage by our `Monitor <https://monitor.pchain.org>`_, or by RPC `tdm_getEpoch <https://github.com/pchain-org/pchain/wiki/JSON-RPC#tdm_getEpoch>`_.
 
-Now you can prepare the parameters will used during vote and reveal vote, you should have:
+Now you can prepare the parameters which will be used during vote and reveal vote, you should have:
 
 - address 
 - consensus public key   //contains in priv_validator.json
 - consensus private key  //contains in priv_validator.json
-- amount           //should be at least 100k PI and equal or larger than total_depositProxiedBalance+total_proxiedBalance-total_pendingRefundBalance
+- amount           //should be at least 100k PI and equal or larger than total_depositProxiedBalance + total_proxiedBalance - total_pendingRefundBalance. **The amount should keep the same when you vote and reveal vote.**
 - salt             
 
 If you are not sure what amount should set, you can check your full balance by RPC `eth_getFullBalance <https://github.com/pchain-org/pchain/wiki/JSON-RPC#eth_getFullBalance>`_.
@@ -72,7 +72,7 @@ and then type your parameters to generate the vote hash:
 	var salt = "ilovepchain"; //this string can be whatever you like
 	web3.getVoteHash(address,pubkey,amount,salt);
 	//"0x4dcb9f6e059051c58cc06ee0c038af4bffc18e85983540a72012bce56d2c37ec"
-Now you get the vote hash "0x4dcb9f6e059051c58cc06ee0c038af4bffc18e85983540a72012bce56d2c37ec". Notice the amount is in hex, if you don't know how to convert dec to hex, we suggest you do this by PIWallet, which will be much easier.
+Now you get the vote hash "0x4dcb9f6e059051c58cc06ee0c038af4bffc18e85983540a72012bce56d2c37ec". **Notice the amount is in hex, if you don't know how to convert dec to hex, we suggest you do this by PIWallet, which will be much easier.**
 
 Note: 1gwei = 1000000000wei = 0x3B9ACA00
 
@@ -85,7 +85,7 @@ You can vote by `RPC tdm_voteNextEpoch <https://github.com/pchain-org/pchain/wik
 In this case, the command should be:
 ::
 	curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"tdm_voteNextEpoch","params":["0x4CACBCBF218679DCC9574A90A2061BCA4A8D8B6C", "0x4dcb9f6e059051c58cc06ee0c038af4bffc18e85983540a72012bce56d2c37ec"],"id":1}' localhost:6969/pchain
-Remember the return hash and wait for pchain enter reveal vote duration.
+Remember the return hash to check if this vote transaction succeed, and then wait for pchain enter reveal vote duration.
 
 Note: you can vote many times during vote phase, the last one will prevail.
 
@@ -99,15 +99,15 @@ In this case, the command should be:
 ::
 	curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"chain_signAddress","params":["0x4CACBCBF218679DCC9574A90A2061BCA4A8D8B6C", "0xD8AF52E355CD070ED3401800CBC920B6E94F3C49B42808C3049BF7BDB1FA3B19"],"id":1}' localhost:6969/pchain
 	//"0x1214608bcdf2e464b2d37d19b1b671482253e275d33079264045253fbb18689385ac0d5b4128d0c593211588deafd9ea2507b4858bdd42aaef3999045c0407ae"
-Remember the return hash.
+Remember the return hash to check if this transaction succeed.
 
-Now you can vote by `RPC tdm_revealvote <https://github.com/pchain-org/pchain/wiki/JSON-RPC#tdm_revealvote>`_.
+Now you can receal vote by `RPC tdm_revealvote <https://github.com/pchain-org/pchain/wiki/JSON-RPC#tdm_revealvote>`_.
 ::
 	curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"tdm_revealVote","params":["address", "consensus public key", "amount", "salt", "signature"],"id":1}' localhost:6969/chainid
 In this case, the command should be:
 ::
 	curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"tdm_revealVote","params":["0x4CACBCBF218679DCC9574A90A2061BCA4A8D8B6C", "085586D41F70435700850E19B7DE54B3E793C5EC4C6EC502D19030EF4F2122823E5A765E56CBA7B4C57E50561F77B022313C39895CA303F3C95D7B7282412F334778B95ACE046A79AEA4DB148334527250C8895AC5DB80459BF5D367236B59AF2DB5C0254E30A6D8CD1FA10AB8A5D872F5EBD312D3160D3E4DD496973BDC75E0", "0x152d02c7e14af7000000", "ilovepchain", "0x1214608bcdf2e464b2d37d19b1b671482253e275d33079264045253fbb18689385ac0d5b4128d0c593211588deafd9ea2507b4858bdd42aaef3999045c0407ae"],"id":1}' localhost:6969/pchain
-Remember the return hash and wait for pchain enter the last phase.
+Remember the return hash to check if this reveal vote transaction succeedand, and then wait for pchain enter the last phase.
 
 >>>>>>
 Check
@@ -123,4 +123,4 @@ In this case, the command should be
 How to quit validator
 >>>>>>>>>>>>>>>>>>>>>
 
-If you no longer want to be a validator, you can quit by yourself, the process is the same as above, just set the amount to 0. If you are also a candidate, you should cancel candidate first.
+If you no longer want to be a validator, you can quit by yourself. You need also take part in 2 process of voting and revealing vote as the same above, just set the amount to 0. If you are also a candidate node with delegations, you need cancel candidate submission first.

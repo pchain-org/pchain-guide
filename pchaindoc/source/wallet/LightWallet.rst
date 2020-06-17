@@ -12,7 +12,7 @@ Create or import account
 .. image:: ../_static/wallet/account.png
 
 | If you don't have an account, click the ‘Wallet--Create’ to create account and set password. The password will only saved on your local computer.
-| You can also import account if you already have a keystore file (file name usually start with UTC) or private key.
+| You can also import account if you already have its keystore file (file name usually start with UTC) or private key.
 
 ========================
 Transfer PI cross chain
@@ -20,7 +20,7 @@ Transfer PI cross chain
 
 .. image:: ../_static/wallet/trasfercross.png
 
-| You can transfer PI from main chain to child chain or transfer from child chain to main chain.
+| You can transfer PI between main chian and child chain or from one child chain to another child chain.
 
 =========================
 Transfer PI on same chain
@@ -108,7 +108,7 @@ How to extract mining rewards from rewardBalance
 
 Noted:
 
-- After PCHAIN mainnet upgraded to V1.2.0, the mining reward need to be extracted by users ( Validators/ delegators) instead of being released automatically.
+- After PCHAIN mainnet upgraded to V1.2.0, the mining reward need to be extracted by users ( Validator nodes/ delegators) instead of being released automatically.
 - After each epoch ends, you can extract the 1/12 mining reward at anytime. 
 - You can’t define the extract amount. The amount is the total reward on one chain you can extract at that moment. 
 

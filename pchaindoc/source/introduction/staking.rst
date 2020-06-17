@@ -32,7 +32,7 @@ We will introduce how to do those step by step.
 Preparation
 -----------
 
-Currently, you can swap native PI via :ref:`token swap on PIWallet<Token Swap>`.
+Please make sure there is enough native PI in your account.
 
 
 -------------------

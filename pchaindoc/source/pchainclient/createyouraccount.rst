@@ -16,12 +16,12 @@ If you wanna
 you will only need to generate an address.
 :: 
 	pchain --datadir=yourdatadir account new
-This command will generate a keystore file under your datadir, the file name usually start with "UTC". We suggest you to keep this file on your local computer or import it to PIWallet.
+This command will generate a keystore file under your datadir, the file name usually start with "UTC". **We suggest you to keep this file on your local computer or import it to PIWallet**.
 
 If you wanna also
 
-- become a validator to mining
-- apply candidates
+- become a validator node to mining
+- apply candidate node with delegations
 
 you will also need to generate bls keys for mining.
 :: 
@@ -43,7 +43,7 @@ Now please check your datadir's structure:
 			-priv_validator.json  
 			-keystore/          
 
-If you also running child chain and would like to mining on both main chain and child chain, your datadir's structure should look like this:
+If you also run child chain and would like to mining on both main chain and child chain, your datadir's structure should look like this:
 ::
 	datadir/
 		-chaininfo.db/    

@@ -2,7 +2,7 @@
 Data Reduction
 =================
 
-1. Ensure your pchain version is later than v1.2.0
+1.Ensure you have updated pchain to at least v1.2.0
 ::
 	cd ~/pchain/
 	./bin/pchain version

@@ -71,7 +71,7 @@ if it return true, your node is syncing now. Also you can type "pi.blockNumber" 
 5.How to check if my node is validating blocks?
 -------------------------------------------------------------
 
-| Go to `piscan <https://piscan.pchain.org/miner.html>`_, enter your address and search, you can check the last block you validated. Usually the last block you validate should be several mins ago. 
+| Go to `piscan <https://piscan.pchain.org/miner.html>`_, enter your address and search, you can check the last block you validated. Usually the last block you validate should be mined several mins ago. 
 
 -------------------------------------------------------------
 6.How to collect logs?
@@ -105,10 +105,10 @@ First, check if you are running the latest version, you can find the latest veri
 :ref:`Flow and FAQ of become validatorFaqvalidator<>`
 
 -------------------------------------------------------------
-12. How many tokens to run on PCHAIN?
+12. How many tokens used to run on PCHAIN?
 -------------------------------------------------------------
 You need stake at least 100K PI to run alone on PCHAIN. 
-If you want to run a node through others’ delegation, then you need 10K PI to apply for the Candidate first.
+If you want to run a node with others’ delegation, then you need 10K PI to apply for the Candidate node first.
 
 
 -------------------------------------------------------------

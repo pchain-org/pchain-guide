@@ -4,6 +4,8 @@
 Token Swap
 ==========
 
+The official token swap from ERC 20 to native PI has finished on March 31st 2020! 
+
 There are two methods to complete the token swap: Exchange Swap and PIwallet Swap
 
 Currently, 4 exchanges (Bibox, Gate.io, Bithumb, Upbit) support native PI, the other exchange（Bittrex Global）still support the ERC 20 PI. Thus, if your ERC 20 PI tokens are in the exchange, then you need to withdraw all the ERC 20 PI first.

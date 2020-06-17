@@ -28,7 +28,7 @@ Notice: Dont create different child chain with same address.
 create child chain
 >>>>>>>>>>>>>>>>>>
 
-Suppose you are gonna create a child chain which chain id is "mychain", and you want your child chain start with one validator with minimun deposit 100k PI.
+Suppose you are gonna create a child chain which chain id is "mychain", and you want your child chain to start with one validator with minimun 100k deposit PI.
 
 You can create child chain by `RPC chain_createChildChain <https://github.com/pchain-org/pchain/wiki/JSON-RPC#chain_createchildchain>`_.
 ::
@@ -54,7 +54,7 @@ In this case, the command should be:
 	//"0x1214608bcdf2e464b2d37d19b1b671482253e275d33079264045253fbb18689385ac0d5b4128d0c593211588deafd9ea2507b4858bdd42aaef3999045c0407ae"
 Remember the return hash.
 
-Now you need to join child chain, in this example, you need at least one validator with at least 100k PI deposit to let your child chain start.
+Now you need to join child chain, in this example, you need at least one validator with at least 100k deposit PI to let your child chain start.
 You can join child chain by `RPC chain_joinChildChain <https://github.com/pchain-org/pchain/wiki/JSON-RPC#chain_joinchildchain>`_.
 ::
 	curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"chain_createChildChain","params":["from","pubkey", "chainId", "depositAmount", "signature"],"id":1}' localhost:6969/pchain
@@ -62,7 +62,7 @@ In this case, the command should be:
 ::
 	curl -X POST -H "Content-Type:application/json" --data '{"jsonrpc":"2.0","method":"chain_createChildChain","params":["0x4CACBCBF218679DCC9574A90A2061BCA4A8D8B6C","085586D41F70435700850E19B7DE54B3E793C5EC4C6EC502D19030EF4F2122823E5A765E56CBA7B4C57E50561F77B022313C39895CA303F3C95D7B7282412F334778B95ACE046A79AEA4DB148334527250C8895AC5DB80459BF5D367236B59AF2DB5C0254E30A6D8CD1FA10AB8A5D872F5EBD312D3160D3E4DD496973BDC75E0", "mychain", "0x152D02C7E14AF6800000", "0x1214608bcdf2e464b2d37d19b1b671482253e275d33079264045253fbb18689385ac0d5b4128d0c593211588deafd9ea2507b4858bdd42aaef3999045c0407ae"],"id":1}' localhost:6969/pchain
 
-After this transaction been packed and main chain reachs "startBlock" height, your chain will be start.
+After this transaction packed and main chain reaches "startBlock" height, your chain will start.
 
 >>>>>>
 Check
