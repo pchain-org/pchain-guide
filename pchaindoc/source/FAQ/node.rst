@@ -2,7 +2,7 @@
 Check node status step by step
 ==============================
 
-.. image:: ../_static/Help/nodecheck.png
+.. image:: ../_static/Help/nodecheck.jpg
 
 We recommnd you to put the --ethstats=yournodename:pChain4EVER@stats.pchain.site:80 in run.sh so you can check your node's status on http://stats.pchain.site/
 
