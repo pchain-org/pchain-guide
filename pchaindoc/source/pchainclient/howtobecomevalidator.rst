@@ -76,6 +76,8 @@ Now you get the vote hash "0x4dcb9f6e059051c58cc06ee0c038af4bffc18e85983540a7201
 
 Note: 1gwei = 1000000000wei = 0x3B9ACA00
 
+.. _Vote:
+
 >>>>>
 Vote
 >>>>>
@@ -88,6 +90,8 @@ In this case, the command should be:
 Remember the return hash to check if this vote transaction succeed, and then wait for pchain enter reveal vote duration.
 
 Note: you can vote many times during vote phase, the last one will prevail.
+
+.. _Reveal vote:
 
 >>>>>>>>>>>
 Reveal Vote
@@ -123,4 +127,4 @@ In this case, the command should be
 How to quit validator
 >>>>>>>>>>>>>>>>>>>>>
 
-If you no longer want to be a validator, you can quit by yourself. You need also take part in 2 process of voting and revealing vote as the same above, just set the amount to 0. If you are also a candidate node with delegations, you need cancel candidate submission first.
+If you no longer want to be a validator, you can quit by yourself. You need also take part in 2 process of :ref:`Vote` voting and :ref:`Reveal Vote` revealing vote as the same above, just set the amount to 0. If you are also a candidate node with delegations, you need cancel candidate submission first.
