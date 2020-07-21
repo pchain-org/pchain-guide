@@ -54,3 +54,7 @@ This error occured because you are cancel invalid amount.Please copy your candid
 
 If you don't wanna cancel all your delegation, the amount you cancel should be lower or equal than A+B-C-1000. If you wanna cancel all your delegation, the amount you cancel must be equal to A+B-C.
 
+-------------------------------------------------------------
+9.Error: Replacement transaction underpriced
+-------------------------------------------------------------
+This error occured becaused the former transaction you made before are in processing. Suggest you to wait for a moment and retry. But if you wanna make this new transaction to cover the former one, you can send with the higher gas fee.
