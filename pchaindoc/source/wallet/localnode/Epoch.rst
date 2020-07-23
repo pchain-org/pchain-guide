@@ -7,7 +7,8 @@ How to become validator
 Before you vote to become validator by PIWallet, make sure you have done things bellow: 
 
 - :ref:`set up the RPC URL <Local Node Mode>` 
-- have at least 100k PI on your address
+- have at least 100k PI, which means "balance + total_depositProxiedBalance + total_proxiedBalance - total_pendingRefundBalance" > = 100K PI.
+- In general, the gas fee is about 0.00021 PI which will be directly paid from your balance.
 
 You can choose to apply candidates first so you can let other delegate to you. This is an option, not neccessity.
 
@@ -64,7 +65,7 @@ Click the ‘Epoch--Vote Next Epoch’ and fill the information.
 | Amount: 	the amount(PI) you wanna deposit(must equal or larger than (total_depositProxiedBalance + total_proxiedBalance - total_pendingRefundBalance.)
 | Salt:		can be whatever you want
 
-If you vote successfully, the wallet will return a transaction hash. **Please remember all parameters you set, which will be used in revealing vote process**
+If you vote successfully, the wallet will return a transaction hash. You may cost 0.00021 PI for the gas fee from your balance. **Please remember all parameters you set, which will be used in revealing vote process**
 
 .. image:: ../../_static/wallet/localnode/votehash.png
 
@@ -78,6 +79,6 @@ Click the ‘Epoch--Reveal Vote’ and fill the information
 | From, PubKey, Amount and Salt must be the same with the value you set on vote.
 | BLS Private Key: bls private key included in priv_validator.json
 
-If you vote successfully, the wallet will return a transaction hash.
+If you vote successfully, the wallet will return a transaction hash. You may cost 0.00021 PI for the gas fee from your balance. 
 
 .. image:: ../../_static/wallet/localnode/revealhash.png

@@ -97,7 +97,9 @@ If you wanna migrate your pchain to another computer, just install pchain on you
 ------------------------------------------------------------------------
 10. How to check if my node running correctly after setting up the node?
 ------------------------------------------------------------------------
-First, check if you are running the latest version, you can find the latest verison from our github. Then make sure the peers connected to your node is more than 2/3 validator number by RPC. And also check if you are syncing to the latest height, you can check the latest height on our Monitor.
+First, check if you are running the latest version, you can find the latest verison from our github. 
+Then make sure the peers connected to your node is more than 2/3 validator number by RPC.
+And also check if you are syncing to the latest height, you can check the latest height on our Monitor.
 
 -------------------------------------------------------------
 11. How to check your node status when running on PCHAIN?

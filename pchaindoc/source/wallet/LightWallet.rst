@@ -55,7 +55,7 @@ Pchain have 12 epochs per year, and in each epoch there are 4 phases.
 .. image:: ../_static/wallet/delegate0.png
 
 2. Please make sure which chain and Candidate you want to delegate to. Then Click “Join”. 
-3. Fill in the delegate amount with at least 1,000 PI.
+3. Fill in the delegate amount with at least 1,000 PI. Ensure there is at least 0.00021 PI left in your balance for paying the gas fee.
 The invite code is optional here, it’s designed for some programmes (not released now).
 
 .. image:: ../_static/wallet/delegate1.png
@@ -100,6 +100,8 @@ You can cancel delegation before the current Epoch reaches 75%.
 
 | Choose the candidate that your want to cancel delegation to from the list. The default amount shows the total amount that you delegate to this address. 
 | You can cancel with total delegation amount. Also, you can define the amount that you want to decrease but ensure the delegate balance to this address is equal or greater than 1,000 PI.
+
+Noted: In general, the gas fee is about 0.00021 PI which will be directly paid from your balance.
 
 
 =================================================

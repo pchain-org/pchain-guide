@@ -22,7 +22,7 @@ Here is an example of priv_validator.json which stores your address and consensu
         ]
 	}
 
-Notice: Dont create different child chain with same address.
+Notice: Dont create different child chain with same address. You can find this priv_validator.json file in the datadir/.pchain/pchain directory.
 
 >>>>>>>>>>>>>>>>>>
 create child chain
@@ -40,6 +40,8 @@ In this case, the command should be:
 You can set parameter startBlock very small and set parameter endBlock very big to make sure you wont miss it. After this your account will deposit 100k PI on child chain. If you didnt finish second step, the deposit will be back to your account once main chain reachs the "endBlock" height.
 
 Note: This is only the first step, you need to finish the second step or the chain wont start.
+
+
 
 >>>>>>>>>>>>>>>>
 Join Child Chain
