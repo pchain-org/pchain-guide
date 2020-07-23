@@ -15,7 +15,7 @@ First, unlock your account. (Please do not keep your account unlock for long tim
 
 .. image:: ../../_static/wallet/localnode/unlock.png
 
-Click ‘Candidate--Apply Candidate’ and fill your deposit amount with at least 10,000 PI and your expected commission(% profit sharing expected from being a Validator). Then click ‘Apply’. Noted: before "apply", ensure there is at least **** PI left in your address balance for paying the gas fee.
+Click ‘Candidate--Apply Candidate’ and fill your deposit amount with at least 10,000 PI and your expected commission(% profit sharing expected from being a Validator). Then click ‘Apply’. Noted: before "apply", ensure there is at least 0.00021 PI left in your address balance for paying the gas fee.
 
 .. image:: ../../_static/wallet/localnode/apply1.png
 
