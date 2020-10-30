@@ -24,9 +24,6 @@ How to cancel delegation ?
 -------------------------------------------------------------
 Before the epoch reaches 75% height, you can cancel delegation. Guidance: :ref:`How to cancel delegation<canceldelegation>`
 
-If your candidate is the validator in current epoch，the delegated amount will be unlocked to your balance when the epoch ends.
-If not, then the delegated amount will be unlocked to your balance immediately.
-
 -------------------------------------------------------------
 Error: cancel amount greater than your Proxied Balance
 -------------------------------------------------------------
@@ -50,3 +47,12 @@ This error occured because you are cancel invalid amount.Please copy your candid
 	PendingRefundBalance 	C PI
 
 If you don't wanna cancel all your delegation, the amount you cancel should be lower or equal than A+B-C-1000. If you wanna cancel all your delegation, the amount you cancel must be equal to A+B-C.
+
+--------------------------------------------------------------------------
+When can I get my PI back after I cancel the delegation successfully?
+--------------------------------------------------------------------------
+If you delegated and wanna cancel in the same epoch before the chain reaches 75% height, the token will return back to balance immediately.
+
+If you delegated in last epoch and your candidate failed to be validator in current epoch, once you cancel delegation before the chain reaches 75% height, the token will return back to balance immedidately.
+
+If you delegated in last epoch and your candidate is elected to be validator successfully in current epoch, once you cancel delegation before the chain reaches 75% height, the token will return back to balance when the current epoch ends.
