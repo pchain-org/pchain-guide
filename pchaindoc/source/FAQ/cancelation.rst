@@ -28,7 +28,14 @@ Before the epoch reaches 75% height, you can cancel delegation. Guidance: :ref:`
 Error: cancel amount greater than your Proxied Balance
 -------------------------------------------------------------
 
-This error occured because the PI amount you are cancelling is greater than you delegated. Please copy your candidate's address and go to `PIScan <https://piscan.pchain.org/fullBalance.html>`_ to check your candidate's fullbalance. Find your address in your candidate's Proxied detail, there are 3 value which we supposed is 
+1. Mostly you have canceled this delegation before, so you will get this error when repeatly cancel it. Please make a copy of the candidate address and check its fullbalance at `PIScan <https://piscan.pchain.org/fullBalance.html>`_ . Find if your account value  show in the PendingRefundBalance in the candidate's Proxied detail. If so, the cancellation succeed, the delegated PI will unlock to your balance when the current epoch ends. 
+For example, the user A (0xa2535da0764e8a7c6e167fcfc22b9ec5b10661d1 ) delegated PI to the candidate B (0xf6a94ecd6347a051709f7f96061c6a0265b59181). Once canceled, user A can find the info like below.
+
+.. image:: ../_static/wallet/repeat1.png
+
+.. image:: ../_static/wallet/repeat2.png
+
+2.This error occured because the PI amount you are cancelling is greater than you delegated. Please copy your candidate's address and go to `PIScan <https://piscan.pchain.org/fullBalance.html>`_ to check your candidate's fullbalance. Find your address in your candidate's Proxied detail, there are 3 value which we supposed is 
 ::
 	ProxiedBalance 	A PI
 	DepositProxiedBalance 	B PI
