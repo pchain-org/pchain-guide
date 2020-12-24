@@ -157,3 +157,30 @@ If it returns “Error” like the picture below, pls click “Detail” of the 
 .. image:: ../_static/q&a/recover6.png
 
 
+--------------------------------------------------
+How to resolve handle crash on child chain?
+--------------------------------------------------
+
+If you got the error on child chain like following 2 pics, it means the handle crash due to the number of handles increased.  Please follow the steps below to recover it.
+
+.. image:: ../_static/q&a/handlecrash1.png
+
+.. image:: ../_static/q&a/handlecrash2.png
+
+Run ” cat /proc/sys/fs/file-max ” to check the maximum number of files.
+
+Run “sudo vi /etc/security/limits.conf“ to set file number ( should be less than or equal to the max number of files above). 
+
+* soft nofile 512000 
+* hard nofile 512000
+
+Run “ sudo vi /etc/pam.d/common-session”
+session required pam_limits.so
+
+Run “ sudo vi /etc/profile”
+ulimit -SHn 512000 
+ulimit -v unlimited
+
+Click this `link <https://medium.com/@muhammadtriwibowo/set-permanently-ulimit-n-open-files-in-ubuntu-4d61064429a>`_ for Reference for Ubuntu system on setting the number of files to recover the handle crash.
+
+
